@@ -1,0 +1,30 @@
+{
+  "name": "the-kiln",
+  "version": "1.0.0",
+  "description": "The Kiln: Fire It Up",
+  "main": "index.js",
+  "repository": "https://github.com/dannytpeck/the-kiln",
+  "scripts": {
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
+    "build": "./node_modules/.bin/webpack -p --define process.env.NODE_ENV='\"production\"' --progress --colors"
+  },
+  "author": "Danny Peck, Josh Braun",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-core": "^6.2.1",
+    "babel-loader": "^6.2.0",
+    "babel-preset-es2015": "^6.1.18",
+    "babel-preset-react": "^6.1.18",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.14.1"
+  },
+  "dependencies": {
+    "axios": "^0.13.1",
+    "babel-preset-stage-1": "^6.1.18",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "redux": "^3.6.0",
+    "redux-promise": "^0.5.3"
+  }
+}

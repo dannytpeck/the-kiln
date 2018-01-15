@@ -1,0 +1,264 @@
+body {
+	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	padding: 1em 0 3em 3em;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+label {
+	width: 100%;
+}
+
+label > input {
+  float: right;
+	font-weight: initial;
+	width: 320px;
+}
+
+xmp {
+	white-space: pre-wrap;
+}
+
+#select-type{
+	margin-left: 15px;
+}
+
+#customWrapper {
+	opacity: 0;
+}
+
+#edit {
+	margin-top: 1em;
+	overflow: hidden;
+	transition: opacity 500ms;
+}
+
+#preview {
+	background-color: #F1F2F3;
+	border: 1px solid #888;
+	width: 440px;
+	position: absolute;
+	top: 25px;
+	left: 500px;
+	border-top-color: #999;
+	border-radius: 5px;
+	box-shadow: 0 5px 20px rgba(0,0,0,.2);
+	background-clip: padding-box;
+	color: #555;
+	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-size: 1em;
+	line-height: 1.4;
+	overflow: hidden;
+	padding-left: 20px;
+	padding-right: 20px;
+	padding-bottom: 15px;
+	transition: left 300ms, opacity 500ms;
+}
+
+#titleInput {
+	display: none;
+	position: absolute;
+	top: 28px;
+	left: 560px;
+	width: 260px;
+}
+
+#upload {
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 832px;
+}
+
+#download {
+	display: none;
+	position: absolute;
+	top: 24px;
+	left: 700px;
+}
+
+#limeade-upload {
+  display: none;
+	position: absolute;
+	top: 24px;
+	left: 832px;
+}
+
+#cie-details-section {
+	padding: 4px 0;
+}
+
+#targeting-section {
+	padding: 4px 0 12px 0;
+}
+
+#html-description-section {
+	padding: 4px 0;
+}
+
+/* padding and margins for CIE Details inputs */
+#event-id,
+#event-image-url,
+#end-date,
+#field-1-value,
+#field-2-value,
+#field-3-value {
+	margin-left: 84px;
+}
+
+#points-awarded,
+#event-image-url,
+#end-date,
+#field-1-name,
+#field-2-name,
+#field-3-name,
+#field-1-value,
+#field-2-value,
+#field-3-value {
+	margin-top: 5px;
+}
+
+#targeting-label {
+	margin-top: 30px;
+}
+
+
+#titleLimit,
+#shortDescriptionLimit,
+#descriptionLimit,
+#taglineLimit,
+#moreInformationLimit {
+	margin-top: -7px;
+	font-size: 12px;
+}
+
+#editTagline {
+	width: 220px;
+}
+
+.coaching-container {
+  width: 420px;
+	margin-bottom: 30px;
+}
+
+.coaching-container h4 {
+  display: inline-block;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.coaching-container .remove-button {
+  margin-left: 38px;
+}
+
+#change-coaching-message {
+	clear: both;
+	margin-top: 20px;
+}
+
+#changeCoachingMessage {
+	margin-left: 20px;
+}
+
+#show-targeting {
+	margin: 30px 0 5px 0;
+  position: relative;
+  float: right;
+}
+
+.visible {
+	display: block;
+}
+
+.hidden {
+	display: none;
+}
+
+#limeadePSK {
+  margin-top: 5px;
+  width: 100%;
+}
+
+#challengeCategory {
+	margin-bottom: 10px;
+}
+
+#jsonDetails {
+	display: none;
+	padding: 50px 10px 10px 10px;
+	overflow: hidden;
+	position: absolute;
+	top: 0px;
+	left: 550px;
+	width: 440px;
+}
+
+.brandingBckgrndColor {
+	background-color: #D92C27;
+}
+
+.trumbowyg-title {
+	margin-bottom: -16px;
+}
+
+.trumbowyg-container {
+	width: 420px;
+}
+
+.resources-container {
+  width: 420px;
+	margin-bottom: 25px;
+}
+
+.resources-container h4 {
+  display: inline-block;
+	width: 50%;
+	margin-bottom: 20px;
+}
+
+.resources-container .remove-button {
+  margin-left: 38px;
+}
+
+.resources-container .add-button {
+	background: none;
+	border: none;
+}
+.delete-resource:focus, .add-button:focus{
+	outline: none;
+}
+
+.add-more-resources {
+	font-size: 16px;
+	color: #979797;
+	margin: 0 0 0 10px;
+}
+
+.col-md-5,
+.col-md-1 {
+	margin-bottom: 20px;
+}
+
+.col-md-5:nth-child(2) {
+	margin-left: 20px;
+}
+
+.col-md-5 > span {
+	font-weight: bold;
+}
+
+.col-md-5 > input {
+	width: 190px;
+}
+
+.delete-resource {
+	position: relative;
+	top: 20px;
+	border: none;
+	background: none;
+}
