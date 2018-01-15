@@ -1,5 +1,15 @@
-#The Crushinator
+# The Kiln - Fire It Up!
 
-Our custom challenge and CIE creation tool. Can be found at:
+### Dependencies
+node
 
-http://thelibrary.adurolife.com/the-crushinator/
+### Getting Started
+```
+    > git clone https://github.com/dannytpeck/the-kiln.git
+    > cd the-kiln
+    > npm install
+    > npm start
+```
+
+### Known Issues
+n/a
