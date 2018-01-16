@@ -5,7 +5,7 @@ import CustomSelfReport from './custom_self_report';
 import CustomCie from './custom_cie';
 import { uploadToLibrary } from '../helpers/';
 
-class Crushinator extends React.Component {
+class Kiln extends React.Component {
   constructor(props) {
     super(props);
     this.state = { content: '' };
@@ -33,7 +33,7 @@ class Crushinator extends React.Component {
 
 		return (
 			<div>
-				<h2>The Crushinator</h2>
+				<h2>The Kiln</h2>
 				<p>What are we creating?</p>
 				<Selectors onChange={this.handleSelectType.bind(this)} />
 				{content}
@@ -45,4 +45,4 @@ class Crushinator extends React.Component {
 	}
 }
 
-export default Crushinator;
+export default Kiln;
