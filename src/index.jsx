@@ -6,7 +6,7 @@ import { createStore, applyMiddleware } from 'redux';
 import promise from 'redux-promise';
 import reducers from './reducers';
 
-import Crushinator from './components/crushinator';
+import Kiln from './components/kiln';
 
 const createStoreWithMiddleware = applyMiddleware(
   promise
@@ -14,6 +14,6 @@ const createStoreWithMiddleware = applyMiddleware(
 
 ReactDOM.render(
 	<Provider store={createStoreWithMiddleware(reducers)}>
-		<Crushinator />
+		<Kiln />
 	</Provider>, document.querySelector('#content')
 );
