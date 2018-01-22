@@ -4,11 +4,11 @@ export default function (input) {
   var output = input.replace(stringStripper, ' ');
 
   // 2. strip Word generated HTML comments
-  var commentSripper = new RegExp('<!--(.*?)-->', 'g');
-  output = output.replace(commentSripper, '');
+  var commentStripper = new RegExp('<!--(.*?)-->', 'g');
+  output = output.replace(commentStripper, '');
 
   // 3. remove tags and leave content if any
-  var tagStripper = new RegExp('<(/)*(meta|link|span|\\?xml:|st1:|o:|font)(.*?)>', 'gi');
+  var tagStripper = new RegExp('<(/)*(meta|link|span|table|tr|th|td|thead|tfoot|tbody|\\?xml:|st1:|o:|font)(.*?)>', 'gi');
   output = output.replace(tagStripper, '');
 
   // 4. Remove everything in between and including tags '<style(.)style(.)>'
