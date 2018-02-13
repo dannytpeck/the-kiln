@@ -1,6 +1,9 @@
 import React from 'react';
 
 const SelfReportPreview = ({ shortDescription, tagline, moreInformation, resources }) => {
+  const today = new Date;
+	const currentYear = today.getFullYear();
+
   return (
     <div id="preview">
       <h3>Description</h3>
@@ -24,7 +27,7 @@ const SelfReportPreview = ({ shortDescription, tagline, moreInformation, resourc
         </span>
         <img id="bottomImage" src="https://mywellnessnumbers.com/ChallengeBank/inline-images/CB_Device%20Tracking_web.png" style={{ width: '100%' }} alt="Ignite Your Life"/>
         <p style={{ fontSize: '9px' }}>
-          <span>&#169; Copyright 2017 </span>
+          <span>&#169; Copyright {currentYear} </span>
           <a style={{ textDecoration: 'none' }} href="http://www.adurolife.com" target="_blank">ADURO, INC.</a>
           <span> All rights reserved.</span>
         </p>
