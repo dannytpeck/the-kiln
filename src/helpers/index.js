@@ -32,7 +32,7 @@ export const generateSelfReport = () => {
 	$('#edit').css('padding', '50px 10px 10px 10px');
 	$('#edit').css('overflow', 'hidden');
 	$('#edit').css('position', 'absolute');
-	$('#edit').css('top', '240px');
+	$('#edit').css('top', '540px');
 	$('#edit').css('left', '550px');
 	$('#edit').css('width', '440px');
 
@@ -280,7 +280,7 @@ export const downloadCSV = (type) => {
 	});
 
 	const file = encodeURI('data:text/csv;charset=utf-8,' + csvContent);
-	// TODO: change -2017 in filename to instead use current year
+
 	let today = new Date;
 	let currentYear = today.getFullYear();
 	const filename = employerName.replace(/\s+/g, '') + '-CIE-' + eventName.replace(/\s+/g, '') + '-' + currentYear +'.csv';
@@ -320,11 +320,10 @@ export const uploadToLimeade = (type) => {
 // wasn't sure of where to put this file-wise
 // also it uses an onclick
 window.toggleTargeting = () => {
-	if (document.getElementById('targeting-group').className == 'hidden') {
+	if (document.getElementById('targeting-group').className === 'hidden') {
 		document.getElementById('targeting-group').classList.add('visible');
 		document.getElementById('targeting-group').classList.remove('hidden');
-	}
-	else {
+	} else {
 		document.getElementById('targeting-group').classList.add('hidden');
 		document.getElementById('targeting-group').classList.remove('visible');
 	}
