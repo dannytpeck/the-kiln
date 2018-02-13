@@ -4,15 +4,60 @@ const SelfReportJsonDetails = () => {
   return (
     <div id="jsonDetails">
       <h4>JSON Object:</h4>
-      <div id="jsonEdit">
-        <label>Dimensions<input id="jsonDimensions" type="text" placeholder='"Resilience", "Self-Care"'></input></label><br/>
-        <label>Image URL<input id="jsonImageUrl" type="text" placeholder="#"></input></label><br/>
-        <label>Team<input id="jsonTeam" type="text" placeholder="Team/Individual"></input></label><br/>
-        <label>Tracking<input id="jsonTracking" type="text" placeholder="One Time/One Time Days/One Time Units/Weekly Days/Weekly Units"></input></label><br/>
-        <label>Required<input id="jsonRequired" type="text" placeholder="0"></input></label><br/>
-        <label>Device <input id="jsonDevice" type="text" placeholder="yes/no"></input></label><br/>
-        <label>Text <input id="jsonText" type="text" placeholder="daily activity OR steps | exercise OR miles | exercise" maxlength="31"></input></label><br/>
-      </div>
+
+      <form id="form jsonEdit">
+
+        <div className="form-group">
+          <label htmlFor="jsonDimensions">Dimensions</label>
+          <input type="text" className="form-control" id="jsonDimensions" placeholder='"Resilience", "Self-Care"' />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonImageUrl">Image URL</label>
+          <input type="text" className="form-control" id="jsonImageUrl" placeholder="#" />
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonTeam">Team</label>
+          <select id="jsonTeam" className="form-control custom-select">
+            <option defaultValue>Individual</option>
+            <option>Team</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonTracking">Tracking</label>
+          <select id="jsonTracking" className="form-control custom-select">
+            <option defaultValue>One Time</option>
+            <option>One Time Days</option>
+            <option>One Time Units</option>
+            <option>Weekly Days</option>
+            <option>Weekly Units</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonRequired">Required</label>
+          <select id="jsonRequired" className="form-control custom-select">
+            <option defaultValue>0</option>
+            <option>1</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonDevice">Device</label>
+          <select id="jsonDevice" className="form-control custom-select">
+            <option defaultValue>no</option>
+            <option>yes</option>
+          </select>
+        </div>
+
+        <div className="form-group">
+          <label htmlFor="jsonText">Text</label>
+          <input type="text" className="form-control" id="jsonText" placeholder="daily activity OR steps | exercise OR miles | exercise" />
+        </div>
+
+      </form>
     </div>
   );
 };
