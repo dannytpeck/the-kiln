@@ -15,8 +15,22 @@ class TrumbowygBox extends React.Component {
 	}
 
 	componentDidMount() {
-		$('#' + this.props.name + 'Edit').trumbowyg()
-    .on('tbwpaste', (event) => {
+		$('#' + this.props.name + 'Edit').trumbowyg(
+			{ btns: 
+				[
+				['viewHTML'],
+        ['undo', 'redo'], // Only supported in Blink browsers
+        ['formatting'],
+        ['strong', 'em', 'del'],
+        ['superscript', 'subscript'],
+        ['link'],
+        ['foreColor', 'backColor'],
+        ['justifyLeft', 'justifyCenter', 'justifyRight', 'justifyFull'],
+        ['unorderedList', 'orderedList'],
+        ['horizontalRule'],
+        ['removeformat']
+				] }
+			).on('tbwpaste', (event) => {
       event.target.innerHTML = cleanPastedHTML(event.target.innerHTML);
     });
 
