@@ -43,7 +43,7 @@ export const generateSelfReport = () => {
 	const editHtml = `
 		<h4>HTML Description</h4>
 		<div id="codeContainer" style="border:2px solid grey; padding:5px; word-wrap:break-word">
-			<pre><code readonly id="htmlContent"><h2>Short Description</h2>
+			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
 					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
@@ -68,7 +68,7 @@ export const generateSelfReport = () => {
 				<script> var imgHouse = document.getElementsByClassName(\'post-thumbnail\')[0]; var img = imgHouse.getElementsByTagName(\'img\')[0]; window.onload=function(){ console.log(img.src); var oSrc = img.src; var l = oSrc.length; var s = l-12; var x = s+8; var nSrc = oSrc.substring(0,s); var ext = oSrc.substring(x,l); img.src=nSrc+ext; }; </script>
 
 				<script type="application/json"> { "defaults":{ "dimensions": [""], "imgUrl": "#", "team": "Team/Individual", "tracking": "One Time/One Time Days/One Time Units/Weekly Days/Weekly Units", "required": "0", "device": "yes/no", "text": "daily activity OR steps | exercise OR miles | exercise" } } </script> <!--end defaults-->
-			</code></pre>
+			</xmp>
 		</div>
 	`;
 
@@ -76,7 +76,7 @@ export const generateSelfReport = () => {
 
   $('#jsonEdit').keyup((event) => {
     const codeHTML = `
-			<pre><code readonly id="htmlContent"><h2>Short Description</h2>
+			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
 					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
@@ -101,7 +101,7 @@ export const generateSelfReport = () => {
 				<script> var imgHouse = document.getElementsByClassName(\'post-thumbnail\')[0]; var img = imgHouse.getElementsByTagName(\'img\')[0]; window.onload=function(){ console.log(img.src); var oSrc = img.src; var l = oSrc.length; var s = l-12; var x = s+8; var nSrc = oSrc.substring(0,s); var ext = oSrc.substring(x,l); img.src=nSrc+ext; }; </script>
 
 				<script type="application/json"> { "defaults":{ "dimensions": [${$('#jsonDimensions').val()}], "imgUrl": "${$('#jsonImageUrl').val()}", "team": "${$('#jsonTeam').val()}", "tracking": "${$('#jsonTracking').val()}", "required": "${$('#jsonRequired').val()}", "device": "${$('#jsonDevice').val()}", "text": "${$('#jsonText').val()}" } } </script> <!--end defaults-->
-			</code></pre>
+			</xmp>
 		`;
 
     $('#codeContainer').html(codeHTML.replace(/\t/g, ''));
@@ -156,9 +156,9 @@ export const generateCIE = () => {
 		'<div class="col-md-12" id="html-description-section">' +
 		'<h4 id="html-description-label">HTML Description:</h4>' +
 		'<div style="border:2px solid grey; padding:5px; word-wrap:break-word">' +
-			'<pre><code readonly id="htmlContent">' +
+			'<xmp id="htmlContent" data-language="html">' +
 				'<div style="font-size: 14px; line-height: 1.3em">' + clean(htmlDescription.innerHTML) + '</div>' +
-			'</code></pre>' +
+			'</xmp>' +
 		'</div>' +
 		'</div>';
 
