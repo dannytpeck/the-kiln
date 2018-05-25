@@ -42,8 +42,8 @@ export const generateSelfReport = () => {
 
 	const editHtml = `
 		<h4>HTML Description</h4>
-		<div id="xmpContainer" style="border:2px solid grey; padding:5px; word-wrap:break-word">
-			<xmp id="htmlContent"><h2>Short Description</h2>
+		<div id="codeContainer" style="border:2px solid grey; padding:5px; word-wrap:break-word">
+			<textarea readonly id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
 					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
@@ -68,15 +68,15 @@ export const generateSelfReport = () => {
 				<script> var imgHouse = document.getElementsByClassName(\'post-thumbnail\')[0]; var img = imgHouse.getElementsByTagName(\'img\')[0]; window.onload=function(){ console.log(img.src); var oSrc = img.src; var l = oSrc.length; var s = l-12; var x = s+8; var nSrc = oSrc.substring(0,s); var ext = oSrc.substring(x,l); img.src=nSrc+ext; }; </script>
 
 				<script type="application/json"> { "defaults":{ "dimensions": [""], "imgUrl": "#", "team": "Team/Individual", "tracking": "One Time/One Time Days/One Time Units/Weekly Days/Weekly Units", "required": "0", "device": "yes/no", "text": "daily activity OR steps | exercise OR miles | exercise" } } </script> <!--end defaults-->
-			</xmp>
+			</textarea>
 		</div>
 	`;
 
 	$('#edit').html(editHtml.replace(/\t/g, ''));
 
   $('#jsonEdit').keyup((event) => {
-    const xmpHTML = `
-			<xmp id="htmlContent"><h2>Short Description</h2>
+    const codeHTML = `
+			<textarea readonly id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
 					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
@@ -101,10 +101,10 @@ export const generateSelfReport = () => {
 				<script> var imgHouse = document.getElementsByClassName(\'post-thumbnail\')[0]; var img = imgHouse.getElementsByTagName(\'img\')[0]; window.onload=function(){ console.log(img.src); var oSrc = img.src; var l = oSrc.length; var s = l-12; var x = s+8; var nSrc = oSrc.substring(0,s); var ext = oSrc.substring(x,l); img.src=nSrc+ext; }; </script>
 
 				<script type="application/json"> { "defaults":{ "dimensions": [${$('#jsonDimensions').val()}], "imgUrl": "${$('#jsonImageUrl').val()}", "team": "${$('#jsonTeam').val()}", "tracking": "${$('#jsonTracking').val()}", "required": "${$('#jsonRequired').val()}", "device": "${$('#jsonDevice').val()}", "text": "${$('#jsonText').val()}" } } </script> <!--end defaults-->
-			</xmp>
+			</textarea>
 		`;
 
-    $('#xmpContainer').html(xmpHTML.replace(/\t/g, ''));
+    $('#codeContainer').html(codeHTML.replace(/\t/g, ''));
 
   });
 
@@ -156,9 +156,9 @@ export const generateCIE = () => {
 		'<div class="col-md-12" id="html-description-section">' +
 		'<h4 id="html-description-label">HTML Description:</h4>' +
 		'<div style="border:2px solid grey; padding:5px; word-wrap:break-word">' +
-			'<xmp id="htmlContent">' +
+			'<textarea readonly id="htmlContent">' +
 				'<div style="font-size: 14px; line-height: 1.3em">' + clean(htmlDescription.innerHTML) + '</div>' +
-			'</xmp>' +
+			'</textarea>' +
 		'</div>' +
 		'</div>';
 
