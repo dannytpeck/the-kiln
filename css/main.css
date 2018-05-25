@@ -20,8 +20,10 @@ label > input {
 	width: 320px;
 }
 
-xmp {
+#htmlContent {
 	white-space: pre-wrap;
+	width: 100%;
+	height: 240px;
 }
 
 #customWrapper {
