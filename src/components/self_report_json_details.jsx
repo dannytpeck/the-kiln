@@ -50,7 +50,7 @@ const SelfReportJsonDetails = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="jsonText">Text</label>
+          <label htmlFor="jsonText">Tracking Text</label>
           <input type="text" className="form-control" id="jsonText" placeholder="daily activity OR steps | exercise OR miles | exercise" />
         </div>
 
