@@ -20,7 +20,7 @@ label > input {
 	width: 320px;
 }
 
-xmp {
+#htmlContent {
 	white-space: pre-wrap;
 }
 

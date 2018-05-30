@@ -37,11 +37,8 @@ const SelfReportJsonDetails = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="jsonRequired">Required</label>
-          <select id="jsonRequired" className="form-control custom-select">
-            <option defaultValue>0</option>
-            <option>1</option>
-          </select>
+          <label htmlFor="jsonRequired">Required (Times to Track)</label>
+          <input type="text" className="form-control" id="jsonRequired" placeholder="0" />
         </div>
 
         <div className="form-group">
@@ -53,7 +50,7 @@ const SelfReportJsonDetails = () => {
         </div>
 
         <div className="form-group">
-          <label htmlFor="jsonText">Text</label>
+          <label htmlFor="jsonText">Tracking Text</label>
           <input type="text" className="form-control" id="jsonText" placeholder="daily activity OR steps | exercise OR miles | exercise" />
         </div>
 

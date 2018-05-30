@@ -42,7 +42,7 @@ export const generateSelfReport = () => {
 
 	const editHtml = `
 		<h4>HTML Description</h4>
-		<div id="xmpContainer" style="border:2px solid grey; padding:5px; word-wrap:break-word">
+		<div id="codeContainer" style="border:2px solid grey; padding:5px; word-wrap:break-word">
 			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
@@ -75,7 +75,8 @@ export const generateSelfReport = () => {
 	$('#edit').html(editHtml.replace(/\t/g, ''));
 
   $('#jsonEdit').keyup((event) => {
-    const xmpHTML = `
+    console.log('keyup run');
+    const codeHTML = `
 			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
@@ -104,7 +105,7 @@ export const generateSelfReport = () => {
 			</xmp>
 		`;
 
-    $('#xmpContainer').html(xmpHTML.replace(/\t/g, ''));
+    $('#codeContainer').html(codeHTML.replace(/\t/g, ''));
 
   });
 
@@ -156,7 +157,7 @@ export const generateCIE = () => {
 		'<div class="col-md-12" id="html-description-section">' +
 		'<h4 id="html-description-label">HTML Description:</h4>' +
 		'<div style="border:2px solid grey; padding:5px; word-wrap:break-word">' +
-			'<xmp id="htmlContent">' +
+			'<xmp id="htmlContent" data-language="html">' +
 				'<div style="font-size: 14px; line-height: 1.3em">' + clean(htmlDescription.innerHTML) + '</div>' +
 			'</xmp>' +
 		'</div>' +
