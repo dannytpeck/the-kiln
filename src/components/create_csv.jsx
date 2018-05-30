@@ -1,7 +1,7 @@
 /* globals $*/
 
 import React from 'react';
-import Clean from '../helpers';
+import Clean from '../helpers/clean';
 
 // Create a CSV for CIE uploads
 export const CreateCSV = () => {
