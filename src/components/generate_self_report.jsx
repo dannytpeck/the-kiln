@@ -1,7 +1,7 @@
 /* globals $*/
 
 import React from 'react';
-import clean from '../helpers/clean';
+import Clean from '../helpers/clean';
 
 export const GenerateSelfReport = () => {
 
@@ -32,18 +32,18 @@ export const GenerateSelfReport = () => {
 			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
-					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
+					<p style="font-weight: bold; font-size: 14px">${Clean(shortDescriptionHtml)}</p>
 				</div>
 				<p></p>
 
 				<h2>More Information</h2>
 				<p></p>
 				<div id="lnD">
-					${clean(htmlDescriptionHtml)}
+					${Clean(htmlDescriptionHtml)}
 				</div>
 
 				[code type=xhtml]
-					${clean(htmlDescriptionHtml)}
+					${Clean(htmlDescriptionHtml)}
 				[/code]
 
 				<h2>Challenge Details:</h2>
@@ -66,18 +66,18 @@ export const GenerateSelfReport = () => {
 			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
 				<div id="shD">
-					<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>
+					<p style="font-weight: bold; font-size: 14px">${Clean(shortDescriptionHtml)}</p>
 				</div>
 				<p></p>
 
 				<h2>More Information</h2>
 				<p></p>
 				<div id="lnD">
-					${clean(htmlDescriptionHtml)}
+					${Clean(htmlDescriptionHtml)}
 				</div>
 
 				[code type=xhtml]
-					${clean(htmlDescriptionHtml)}
+					${Clean(htmlDescriptionHtml)}
 				[/code]
 
 				<h2>Challenge Details:</h2>

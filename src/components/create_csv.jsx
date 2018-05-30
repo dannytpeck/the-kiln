@@ -1,7 +1,7 @@
 /* globals $*/
 
 import React from 'react';
-import clean from '../helpers';
+import Clean from '../helpers';
 
 // Create a CSV for CIE uploads
 export const CreateCSV = () => {
@@ -80,7 +80,7 @@ export const CreateCSV = () => {
 		'',
 		'',
 		'',
-		'"' + clean(htmlDescription).replace(/"/g, '""') + '"',
+		'"' + Clean(htmlDescription).replace(/"/g, '""') + '"',
 		subgroupID,
 		field1Name,
 		field1Value,

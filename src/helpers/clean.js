@@ -1,4 +1,4 @@
-export const clean = (dirtyText) => {
+export const Clean = (dirtyText) => {
 	// Gets rid of anything we don't want in the final HTML output
 	const cleanText = dirtyText
 		.replace(/\u00A9/g, '&copy;')
@@ -15,3 +15,5 @@ export const clean = (dirtyText) => {
 
 	return cleanText;
 };
+
+export default Clean;
