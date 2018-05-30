@@ -2,6 +2,7 @@ import React from 'react';
 import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
 import SelfReportJsonDetails from './self_report_json_details';
+import generateSelfReport from '../helpers/';
 
 class CustomSelfReport extends React.Component {
   constructor(props) {

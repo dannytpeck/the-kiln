@@ -75,6 +75,7 @@ export const generateSelfReport = () => {
 	$('#edit').html(editHtml.replace(/\t/g, ''));
 
   $('#jsonEdit').keyup((event) => {
+    console.log('keyup run');
     const codeHTML = `
 			<xmp id="htmlContent"><h2>Short Description</h2>
 				<p></p>
