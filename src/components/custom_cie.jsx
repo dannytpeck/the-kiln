@@ -1,7 +1,8 @@
 import React from 'react';
 import CieEdit from './cie_edit';
 import CiePreview from './cie_preview';
-import { generateCIE, downloadCSV, uploadToLimeade } from '../helpers/';
+import DownloadCSV from './download_csv';
+import UploadToLimeade from './upload_to_limeade';
 
 class CustomCie extends React.Component {
   constructor(props) {
@@ -24,11 +25,11 @@ class CustomCie extends React.Component {
 	}
   
 	handleDownloadClick() {
-		downloadCSV('cie');
+		DownloadCSV('cie');
 	}
   
 	handleUploadClick() {
-		uploadToLimeade('cie');
+		UploadToLimeade('cie');
 	}
 
 	render() {
