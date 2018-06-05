@@ -3,7 +3,7 @@
 import React from 'react';
 import clean from './clean';
 
-export const GenerateCIE = () => {
+const generateCIE = () => {
 	'use strict';
 	var preview = document.getElementById('preview');
 	var edit = document.getElementById('edit');
@@ -80,4 +80,4 @@ export const GenerateCIE = () => {
 
 };
 
-export default GenerateCIE;
+export default generateCIE;

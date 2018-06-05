@@ -4,7 +4,7 @@ import React from 'react';
 import clean from './clean';
 
 // Create a CSV for CIE uploads
-export const CreateCSV = () => {
+const createCSV = () => {
 	let data = [[
 		'EmployerName',
 		'EventId',
@@ -95,4 +95,4 @@ export const CreateCSV = () => {
   return data;
 };
 
-export default CreateCSV;
+export default createCSV;

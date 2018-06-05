@@ -3,7 +3,7 @@
 import React from 'react';
 import clean from './clean';
 
-export const GenerateSelfReport = () => {
+const generateSelfReport = () => {
 
 	const today = new Date();
 	const date = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
@@ -97,4 +97,4 @@ export const GenerateSelfReport = () => {
 
 	};
 
-export default GenerateSelfReport;
+export default generateSelfReport;

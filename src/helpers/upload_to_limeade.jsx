@@ -3,7 +3,7 @@
 import React from 'react';
 import CreateCSV from './create_csv';
 
-export const UploadToLimeade = (type) => {
+const uploadToLimeade = (type) => {
   const csv = CreateCSV(type);
   const headers = csv[0].join(',');
   const url = 'http://mywellnessnumbers.sftp.adurolife.com/limeade-upload/';
@@ -28,4 +28,4 @@ export const UploadToLimeade = (type) => {
 
 };
 
-export default UploadToLimeade;
+export default uploadToLimeade;
