@@ -1,7 +1,7 @@
 /* globals $*/
 
 import React from 'react';
-import Clean from '../helpers/clean';
+import clean from '../helpers/clean';
 
 export const GenerateCIE = () => {
 	'use strict';
@@ -50,7 +50,7 @@ export const GenerateCIE = () => {
 		'<h4 id="html-description-label">HTML Description:</h4>' +
 		'<div style="border:2px solid grey; padding:5px; word-wrap:break-word">' +
 			'<xmp id="htmlContent" data-language="html">' +
-				'<div style="font-size: 14px; line-height: 1.3em">' + Clean(htmlDescription.innerHTML) + '</div>' +
+				'<div style="font-size: 14px; line-height: 1.3em">' + clean(htmlDescription.innerHTML) + '</div>' +
 			'</xmp>' +
 		'</div>' +
 		'</div>';
