@@ -2,7 +2,7 @@
 
 import React from 'react';
 
-export const UploadToLibrary = () => {
+const uploadToLibrary = () => {
 	$.getJSON('http://thelibrary.adurolife.com/api/get_nonce/?controller=posts&method=create_post')
 		.done(function (json) {
 			var data = {
@@ -32,4 +32,4 @@ export const UploadToLibrary = () => {
 		});
 };
 
-export default UploadToLibrary;
+export default uploadToLibrary;

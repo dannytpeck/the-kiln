@@ -1,10 +1,10 @@
 /* globals $*/
 
 import React from 'react';
-import Clean from '../helpers/clean';
+import clean from './clean';
 
 // Create a CSV for CIE uploads
-export const CreateCSV = () => {
+const createCSV = () => {
 	let data = [[
 		'EmployerName',
 		'EventId',
@@ -80,7 +80,7 @@ export const CreateCSV = () => {
 		'',
 		'',
 		'',
-		'"' + Clean(htmlDescription).replace(/"/g, '""') + '"',
+		'"' + clean(htmlDescription).replace(/"/g, '""') + '"',
 		subgroupID,
 		field1Name,
 		field1Value,
@@ -95,4 +95,4 @@ export const CreateCSV = () => {
   return data;
 };
 
-export default CreateCSV;
+export default createCSV;

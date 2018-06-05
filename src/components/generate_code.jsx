@@ -1,16 +1,16 @@
 import React from 'react';
-import GenerateCIE from './generate_cie';
-import GenerateSelfReport from './generate_self_report';
+import generateCIE from '../helpers/generate_cie';
+import generateSelfReport from '../helpers/generate_self_report';
 
 class GenerateCode extends React.Component {
 	handleClick() {
 		document.getElementById('edit').style.opacity = '0';
     switch (this.props.type) {
       case 'selfreport':
-        setTimeout(GenerateSelfReport, 550);
+        setTimeout(generateSelfReport, 550);
         break;
       case 'cie':
-        setTimeout(GenerateCIE, 550);
+        setTimeout(generateCIE, 550);
         break;
     }
 	}

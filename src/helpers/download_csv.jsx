@@ -3,7 +3,7 @@
 import React from 'react';
 import CreateCSV from './create_csv';
 
-export const DownloadCSV = (type) => {
+const downloadCSV = (type) => {
   const data = CreateCSV(type);
 
 	const employerName = $('#employer-name').val();
@@ -27,4 +27,4 @@ export const DownloadCSV = (type) => {
 	link.click();
 };
 
-export default DownloadCSV;
+export default downloadCSV;
