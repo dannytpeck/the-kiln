@@ -1,7 +1,7 @@
 /* globals $*/
 
 import React from 'react';
-import clean from '../helpers/clean';
+import clean from './clean';
 
 export const GenerateSelfReport = () => {
 

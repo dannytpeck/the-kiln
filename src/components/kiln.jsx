@@ -3,7 +3,7 @@ import SelectChallengeType from './select_challenge_type';
 import UploadModal from './upload_modal';
 import CustomSelfReport from './custom_self_report';
 import CustomCie from './custom_cie';
-import UploadToLibrary from './upload_to_library';
+import UploadToLibrary from '../helpers/upload_to_library';
 
 class Kiln extends React.Component {
   constructor(props) {

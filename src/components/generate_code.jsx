@@ -1,6 +1,6 @@
 import React from 'react';
-import GenerateCIE from './generate_cie';
-import GenerateSelfReport from './generate_self_report';
+import GenerateCIE from '../helpers/generate_cie';
+import GenerateSelfReport from '../helpers/generate_self_report';
 
 class GenerateCode extends React.Component {
 	handleClick() {
