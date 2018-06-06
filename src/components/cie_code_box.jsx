@@ -19,15 +19,6 @@ class CieCodeBox extends React.Component {
   }
 
 	render() {
-    // switch () {
-    //   case '':
-    //     // self-report
-    //     break;
-    //   case 'Custom CIE':
-    //     // CIE
-    //     break;
-    // }
-
     const htmlDescription = document.getElementById('htmlDescription');
 
 

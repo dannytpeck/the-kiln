@@ -44,8 +44,8 @@ class CustomCie extends React.Component {
 				/>
 				<button className="btn btn-default" id="download" onClick={this.handleDownloadClick}>Download CSV</button>
 				<button className="btn btn-primary" id="limeade-upload" onClick={this.handleUploadClick}>Upload to Limeade</button>
-				<CieDetails/>
-				<CieCodeBox/>
+				<CieDetails />
+				<CieCodeBox />
 			</div>
 		);
 	}
