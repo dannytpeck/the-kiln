@@ -51,8 +51,6 @@ label > input {
 	background-color: #F1F2F3;
 	border: 1px solid #888;
 	width: 440px;
-	top: 25px;
-	/*left: 600px;*/
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -60,11 +58,12 @@ label > input {
 	color: #555;
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	font-size: 1em;
-	line-height: 1.4;
+	line-height: 1.5;
 	overflow: hidden;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
+	margin-bottom: 1.5em;
 }
 
 #titleInput {
