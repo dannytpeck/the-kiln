@@ -97,6 +97,12 @@ label > input {
 	padding: 4px 0;
 }
 
+#code-box {
+	border: 2px solid grey;
+	padding:5px;
+	word-wrap:break-word;
+}
+
 /* padding and margins for CIE Details inputs */
 #event-id,
 #event-image-url,
