@@ -31,7 +31,7 @@ label > input {
 #edit {
 	margin-top: 1em;
 	overflow: hidden;
-	transition: opacity 500ms;
+	width: 50%;
 }
 
 #preview {
@@ -53,7 +53,6 @@ label > input {
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
-	transition: left 300ms, opacity 500ms;
 }
 
 #titleInput {
@@ -65,24 +64,20 @@ label > input {
 }
 
 #upload {
-	display: none;
-	position: absolute;
-	top: 24px;
-	left: 832px;
+
 }
 
 #download {
-	display: none;
-	position: absolute;
-	top: 24px;
-	left: 700px;
+
 }
 
 #limeade-upload {
-  display: none;
-	position: absolute;
-	top: 24px;
-	left: 832px;
+
+}
+
+#cie-details-container {
+	float: left;
+	width: 440px;
 }
 
 #cie-details-section {
@@ -95,7 +90,9 @@ label > input {
 
 #html-description-section {
 	padding: 4px 0;
-	float: right;
+	position: absolute;
+	left: 600px;
+	width: 440px;
 }
 
 #code-box {
@@ -192,12 +189,8 @@ label > input {
 }
 
 #jsonDetails {
-	display: none;
 	padding: 50px 10px 10px 10px;
 	overflow: hidden;
-	position: absolute;
-	top: 0px;
-	left: 550px;
 	width: 440px;
 }
 
