@@ -2,6 +2,7 @@ import React from 'react';
 import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
 import SelfReportJsonDetails from './self_report_json_details';
+import SelfReportCodeBox from './self_report_code_box';
 
 class CustomSelfReport extends React.Component {
   constructor(props) {
@@ -39,6 +40,7 @@ class CustomSelfReport extends React.Component {
 					moreInformation={this.state.moreInformation}
           resources={`<li><a href="${this.state.resourceLink}" target="_blank">${this.state.resourceText}</a>.</li>`} />
         <SelfReportJsonDetails />
+        <SelfReportCodeBox />
 			</div>
 		);
 	}
