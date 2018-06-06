@@ -98,8 +98,6 @@ label > input {
 #html-description-section {
 	padding: 4px 0;
 	width: 440px;
-	/*left: 600px;*/
-	display: inline-block;
 }
 
 #code-box {
@@ -199,7 +197,6 @@ label > input {
 	padding: 50px 10px 10px 10px;
 	overflow: hidden;
 	width: 440px;
-	display: inline-block;
 }
 
 .brandingBckgrndColor {
