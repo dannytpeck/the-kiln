@@ -3,6 +3,7 @@ import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
 import SelfReportJsonDetails from './self_report_json_details';
 import SelfReportCodeBox from './self_report_code_box';
+import uploadToLibrary from '../helpers/upload_to_library';
 
 class CustomSelfReport extends React.Component {
   constructor(props) {
@@ -15,6 +16,10 @@ class CustomSelfReport extends React.Component {
       resourceText: 'An interesting resource'
     };
   }
+
+  handleUploadClick() {
+		uploadToLibrary();
+	}
 
 	handleKeyUp(event) {
 		switch (event.target.id) {
@@ -39,6 +44,7 @@ class CustomSelfReport extends React.Component {
 					tagline={this.state.tagline}
 					moreInformation={this.state.moreInformation}
           resources={`<li><a href="${this.state.resourceLink}" target="_blank">${this.state.resourceText}</a>.</li>`} />
+        <button className="btn btn-primary" id="upload" onClick={this.handleUploadClick}>Create Library Post</button>
         <SelfReportJsonDetails />
         <SelfReportCodeBox />
 			</div>

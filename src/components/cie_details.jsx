@@ -24,8 +24,8 @@ class CieDetails extends React.Component {
 		}
 
     return (
-      <div>
-				<div className="col-md-12" id="cie-details-section">
+      <div className="col-md-12" id="cie-details-container">
+				<div id="cie-details-section">
 					<h4 id="cie-details-label">CIE Details</h4>
 					<input id="employer-name" type="text" placeholder="EmployerName"/>
 					<input id="event-id" type="text" placeholder="EventId"/>
@@ -34,7 +34,7 @@ class CieDetails extends React.Component {
 					<input id="limeadePSK" type="text" placeholder="PSK"/>
 				</div>
 
-				<div className="col-md-12" id="targeting-section">
+				<div id="targeting-section">
 					<button className="btn btn-default" id="show-targeting" onClick={toggleTargeting}>Show Targeting</button>
 					<div className="hidden" id="targeting-group">
 						<h4 id="targeting-label">Targeting (if needed)</h4>
