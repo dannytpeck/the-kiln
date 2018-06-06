@@ -3,6 +3,8 @@ import CieEdit from './cie_edit';
 import CiePreview from './cie_preview';
 import downloadCSV from '../helpers/download_csv';
 import uploadToLimeade from '../helpers/upload_to_limeade';
+import CieDetails from './cie_details';
+import CieCodeBox from './cie_code_box';
 
 class CustomCie extends React.Component {
   constructor(props) {
@@ -42,6 +44,8 @@ class CustomCie extends React.Component {
 				/>
 				<button className="btn btn-default" id="download" onClick={this.handleDownloadClick}>Download CSV</button>
 				<button className="btn btn-primary" id="limeade-upload" onClick={this.handleUploadClick}>Upload to Limeade</button>
+				<CieDetails/>
+				<CieCodeBox/>
 			</div>
 		);
 	}
