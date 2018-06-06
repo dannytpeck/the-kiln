@@ -40,7 +40,7 @@ label > input {
 	width: 440px;
 	position: absolute;
 	top: 25px;
-	left: 500px;
+	left: 600px;
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -95,6 +95,7 @@ label > input {
 
 #html-description-section {
 	padding: 4px 0;
+	float: right;
 }
 
 #code-box {
