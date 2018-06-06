@@ -24,7 +24,7 @@ class CieDetails extends React.Component {
 		}
 
     return (
-      <div className="col-md-12" id="cie-details-container">
+      <div id="cie-details-container">
 				<div id="cie-details-section">
 					<h4 id="cie-details-label">CIE Details</h4>
 					<input id="employer-name" type="text" placeholder="EmployerName"/>

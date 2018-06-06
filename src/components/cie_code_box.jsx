@@ -23,7 +23,7 @@ class CieCodeBox extends React.Component {
 
 
 		return (
-			<div className="col-md-12" id="html-description-section">
+			<div id="html-description-section">
 				<h4 id="html-description-label">HTML Description:</h4>
 				<div id="code-box">
 					{htmlDescription ? this.renderXmp() : ''}

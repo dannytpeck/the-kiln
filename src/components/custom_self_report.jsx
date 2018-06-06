@@ -37,16 +37,23 @@ class CustomSelfReport extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
-				<SelfReportPreview
+			<div id="custom-self-report">
+				<div className="left-column">
+					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
+					<div id="button-container">
+						<input id="titleInput" type="text" placeholder="Library Post Title"/>
+						<button className="btn btn-primary" id="upload" onClick={this.handleUploadClick}>Create Library Post</button>
+					</div>
+					<SelfReportJsonDetails />
+				</div>
+				<div className="right-column">
+					<SelfReportPreview
 					shortDescription={this.state.shortDescription}
 					tagline={this.state.tagline}
 					moreInformation={this.state.moreInformation}
           resources={`<li><a href="${this.state.resourceLink}" target="_blank">${this.state.resourceText}</a>.</li>`} />
-        <button className="btn btn-primary" id="upload" onClick={this.handleUploadClick}>Create Library Post</button>
-        <SelfReportJsonDetails />
-        <SelfReportCodeBox />
+          <SelfReportCodeBox />
+				</div>
 			</div>
 		);
 	}

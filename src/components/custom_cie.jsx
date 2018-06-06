@@ -36,16 +36,22 @@ class CustomCie extends React.Component {
 
 	render() {
 		return (
-			<div>
-				<CieEdit onKeyUp={this.handleKeyUp.bind(this)} />
-				<CiePreview 
-					title={this.state.title} 
-					description={this.state.description}
-				/>
-				<button className="btn btn-default" id="download" onClick={this.handleDownloadClick}>Download CSV</button>
-				<button className="btn btn-primary" id="limeade-upload" onClick={this.handleUploadClick}>Upload to Limeade</button>
-				<CieDetails />
-				<CieCodeBox />
+			<div id="custom-cie">
+				<div className="left-column">
+					<CieEdit onKeyUp={this.handleKeyUp.bind(this)} />
+					<CieDetails />
+					<div id="button-container">
+						<button className="btn btn-default" id="download" onClick={this.handleDownloadClick}>Download CSV</button>
+						<button className="btn btn-primary" id="limeade-upload" onClick={this.handleUploadClick}>Upload to Limeade</button>
+					</div>
+				</div>
+				<div className="right-column">
+					<CiePreview 
+						title={this.state.title} 
+						description={this.state.description}
+					/>
+					<CieCodeBox />
+				</div>
 			</div>
 		);
 	}

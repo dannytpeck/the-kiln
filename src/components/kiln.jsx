@@ -35,7 +35,6 @@ class Kiln extends React.Component {
 				<p>What are we creating?</p>
         <SelectChallengeType onChange={this.handleSelectType.bind(this)} />
 				{content}
-				<input id="titleInput" type="text" placeholder="Library Post Title"/>
 				<UploadModal />
 			</div>
 		);

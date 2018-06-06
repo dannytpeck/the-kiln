@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	padding: 1em 0 3em 3em;
+	padding: 1em 3em;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -28,19 +28,31 @@ label > input {
 	opacity: 0;
 }
 
+.left-column {
+	width: 50%;
+	float: left;
+}
+
+.right-column {
+	width: 50%;
+	float: left;
+}
+
 #edit {
 	margin-top: 1em;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	display: inline-block;
 	width: 50%;
+	margin-right: 0px;
+	padding-right: 0px;
 }
 
 #preview {
 	background-color: #F1F2F3;
 	border: 1px solid #888;
 	width: 440px;
-	position: absolute;
 	top: 25px;
-	left: 600px;
+	/*left: 600px;*/
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -56,11 +68,7 @@ label > input {
 }
 
 #titleInput {
-	display: none;
-	position: absolute;
-	top: 28px;
-	left: 560px;
-	width: 260px;
+
 }
 
 #upload {
@@ -76,7 +84,7 @@ label > input {
 }
 
 #cie-details-container {
-	float: left;
+	display: inline-block;
 	width: 440px;
 }
 
@@ -90,9 +98,9 @@ label > input {
 
 #html-description-section {
 	padding: 4px 0;
-	position: absolute;
-	left: 600px;
 	width: 440px;
+	/*left: 600px;*/
+	display: inline-block;
 }
 
 #code-box {
@@ -192,6 +200,7 @@ label > input {
 	padding: 50px 10px 10px 10px;
 	overflow: hidden;
 	width: 440px;
+	display: inline-block;
 }
 
 .brandingBckgrndColor {
@@ -204,6 +213,7 @@ label > input {
 
 .trumbowyg-container {
 	width: 420px;
+	display: inline-block;
 }
 
 .resources-container {

@@ -15,7 +15,7 @@ const SelfReportEdit = ({ onKeyUp }) => {
       <TrumbowygBox name="moreInformation" title="More Information (HTML)" characters="2000" />
       <Resources />
       <Coaching />
-      <GenerateCode type="selfreport" />
+      {/* <GenerateCode type="selfreport" /> */}
     </div>
   );
 };
