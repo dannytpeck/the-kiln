@@ -1,7 +1,7 @@
 body {
 	font-family: 'Open Sans', Helvetica, Arial, sans-serif;
 	font-size: 14px;
-	padding: 1em 0 3em 3em;
+	padding: 1em 3em;
 }
 
 input[type=number]::-webkit-inner-spin-button,
@@ -28,19 +28,29 @@ label > input {
 	opacity: 0;
 }
 
+.left-column {
+	width: 50%;
+	float: left;
+}
+
+.right-column {
+	width: 50%;
+	float: left;
+}
+
 #edit {
 	margin-top: 1em;
-	overflow: hidden;
-	transition: opacity 500ms;
+	/*overflow: hidden;*/
+	display: inline-block;
+	width: 50%;
+	margin-right: 0px;
+	padding-right: 0px;
 }
 
 #preview {
 	background-color: #F1F2F3;
 	border: 1px solid #888;
 	width: 440px;
-	position: absolute;
-	top: 25px;
-	left: 500px;
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -48,41 +58,39 @@ label > input {
 	color: #555;
 	font-family: "Helvetica Neue", Arial, sans-serif;
 	font-size: 1em;
-	line-height: 1.4;
+	line-height: 1.5;
 	overflow: hidden;
 	padding-left: 20px;
 	padding-right: 20px;
 	padding-bottom: 15px;
-	transition: left 300ms, opacity 500ms;
+	margin-bottom: 1.5em;
+}
+
+#button-container {
+	display: inline-block;
+	margin: 1em 0;
 }
 
 #titleInput {
-	display: none;
-	position: absolute;
-	top: 28px;
-	left: 560px;
-	width: 260px;
+	width: 220px;
+	margin-right: 1em;
 }
 
-#upload {
-	display: none;
-	position: absolute;
-	top: 24px;
-	left: 832px;
+#library-upload {
+
 }
 
 #download {
-	display: none;
-	position: absolute;
-	top: 24px;
-	left: 700px;
+	margin-right: 1em;
 }
 
 #limeade-upload {
-  display: none;
-	position: absolute;
-	top: 24px;
-	left: 832px;
+	float: right;
+}
+
+#cie-details-container {
+	display: inline-block;
+	width: 440px;
 }
 
 #cie-details-section {
@@ -95,6 +103,13 @@ label > input {
 
 #html-description-section {
 	padding: 4px 0;
+	width: 440px;
+}
+
+#code-box {
+	border: 2px solid grey;
+	padding:5px;
+	word-wrap:break-word;
 }
 
 /* padding and margins for CIE Details inputs */
@@ -121,6 +136,7 @@ label > input {
 
 #targeting-label {
 	margin-top: 30px;
+	display: inline-block;
 }
 
 
@@ -164,6 +180,7 @@ label > input {
 #show-targeting {
 	margin: 30px 0 5px 0;
   position: relative;
+  display: inline-block;
   float: right;
 }
 
@@ -185,12 +202,8 @@ label > input {
 }
 
 #jsonDetails {
-	display: none;
 	padding: 50px 10px 10px 10px;
 	overflow: hidden;
-	position: absolute;
-	top: 0px;
-	left: 550px;
 	width: 440px;
 }
 
@@ -204,6 +217,7 @@ label > input {
 
 .trumbowyg-container {
 	width: 420px;
+	display: inline-block;
 }
 
 .resources-container {

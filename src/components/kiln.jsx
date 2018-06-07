@@ -3,7 +3,7 @@ import SelectChallengeType from './select_challenge_type';
 import UploadModal from './upload_modal';
 import CustomSelfReport from './custom_self_report';
 import CustomCie from './custom_cie';
-import uploadToLibrary from '../helpers/upload_to_library';
+
 
 class Kiln extends React.Component {
   constructor(props) {
@@ -11,9 +11,7 @@ class Kiln extends React.Component {
     this.state = { content: '' };
   }
 
-	handleUploadClick() {
-		uploadToLibrary();
-	}
+
 
 	handleSelectType(event) {
 		this.setState({ content: event.target.value });
@@ -37,8 +35,6 @@ class Kiln extends React.Component {
 				<p>What are we creating?</p>
         <SelectChallengeType onChange={this.handleSelectType.bind(this)} />
 				{content}
-				<input id="titleInput" type="text" placeholder="Library Post Title"/>
-				<button className="btn btn-primary" id="upload" onClick={this.handleUploadClick}>Create Library Post</button>
 				<UploadModal />
 			</div>
 		);
