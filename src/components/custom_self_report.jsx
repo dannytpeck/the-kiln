@@ -32,6 +32,9 @@ class CustomSelfReport extends React.Component {
 			case 'moreInformationEdit':
 				this.setState({ moreInformation: event.target.innerHTML });
 				break;
+			case 'resources-section':
+				this.setState({ resources: event.target.innerHTML });
+				break;
 		}
 	}
 
@@ -51,7 +54,7 @@ class CustomSelfReport extends React.Component {
 					shortDescription={this.state.shortDescription}
 					tagline={this.state.tagline}
 					moreInformation={this.state.moreInformation}
-          resources={`<li><a href="${this.state.resourceLink}" target="_blank">${this.state.resourceText}</a>.</li>`} />
+          resources={this.state.resources} />
           <SelfReportCodeBox />
 				</div>
 			</div>
