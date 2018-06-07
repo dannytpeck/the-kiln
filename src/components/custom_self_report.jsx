@@ -42,7 +42,7 @@ class CustomSelfReport extends React.Component {
 					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
 					<div id="button-container">
 						<input id="titleInput" type="text" placeholder="Library Post Title"/>
-						<button className="btn btn-primary" id="upload" onClick={this.handleUploadClick}>Create Library Post</button>
+						<button className="btn btn-primary" id="library-upload" onClick={this.handleUploadClick}>Create Library Post</button>
 					</div>
 					<SelfReportJsonDetails />
 				</div>

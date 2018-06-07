@@ -66,20 +66,26 @@ label > input {
 	margin-bottom: 1.5em;
 }
 
-#titleInput {
-
+#button-container {
+	display: inline-block;
+	margin: 1em 0;
 }
 
-#upload {
+#titleInput {
+	width: 220px;
+	margin-right: 1em;
+}
+
+#library-upload {
 
 }
 
 #download {
-
+	margin-right: 1em;
 }
 
 #limeade-upload {
-
+	float: right;
 }
 
 #cie-details-container {
