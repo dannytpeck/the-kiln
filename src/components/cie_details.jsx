@@ -8,7 +8,7 @@ class CieDetails extends React.Component {
   render() {
 	
 		// function for showing and hiding targeting
-		// ensure it works in here
+		// TODO: Get it working
 		// change from onclick to something better
 		function toggleTargeting() {
 			function handleClick(e) {
@@ -35,9 +35,9 @@ class CieDetails extends React.Component {
 				</div>
 
 				<div id="targeting-section">
+					<h4 id="targeting-label">Targeting (if needed)</h4>
 					<button className="btn btn-default" id="show-targeting" onClick={toggleTargeting}>Show Targeting</button>
-					<div className="hidden" id="targeting-group">
-						<h4 id="targeting-label">Targeting (if needed)</h4>
+					<div className="visible" id="targeting-group">
 						<input id="subgroup-id" type="text" placeholder="SubgroupId"/>
 						<h6 id="targeting-or-label">or</h6>
 						<input id="field-1-name" type="text" placeholder="Field1Name"/>
