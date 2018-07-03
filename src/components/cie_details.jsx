@@ -1,5 +1,6 @@
 /* globals $ */
 import React from 'react';
+import ToggleTargeting from './toggle_targeting';
 
 class CieDetails extends React.Component {
   constructor(props) {
@@ -7,7 +8,6 @@ class CieDetails extends React.Component {
   }
 
   toggleTargeting() {
-		console.log('Toggle Targeting Clicked');
 		$('#targeting-group').toggle();
 	}
 
@@ -26,16 +26,7 @@ class CieDetails extends React.Component {
 				<div id="targeting-section">
 					<h4 id="targeting-label">Targeting (if needed)</h4>
 					<button className="btn btn-default" id="show-targeting" onClick={this.toggleTargeting}>Toggle Targeting</button>
-					<div id="targeting-group">
-						<input id="subgroup-id" type="text" placeholder="SubgroupId"/>
-						<h6 id="targeting-or-label">or</h6>
-						<input id="field-1-name" type="text" placeholder="Field1Name"/>
-						<input id="field-1-value" type="text" placeholder="Field1Value"/>
-						<input id="field-2-name" type="text" placeholder="Field2Name"/>
-						<input id="field-2-value" type="text" placeholder="Field2Value"/>
-						<input id="field-3-name" type="text" placeholder="Field3Name"/>
-						<input id="field-3-value" type="text" placeholder="Field3Value"/>
-					</div>
+					<ToggleTargeting />
 				</div>
 			</div>
     );
