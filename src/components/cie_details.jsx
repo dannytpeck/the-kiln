@@ -6,22 +6,9 @@ class CieDetails extends React.Component {
     super(props);
   }
 
-  // function for showing and hiding targeting
-	// TODO: Get it working
-	// change from onclick to something better
   toggleTargeting() {
 		console.log('Toggle Targeting Clicked');
 		$('#targeting-group').toggle();
-			// function handleClick(e) {
-			// 	e.preventDefault();
-			// 	if (document.getElementById('targeting-group').className === 'hidden') {
-			// 	document.getElementById('targeting-group').classList.add('visible');
-			// 	document.getElementById('targeting-group').classList.remove('hidden');
-			// } else {
-			// 	document.getElementById('targeting-group').classList.add('hidden');
-			// 	document.getElementById('targeting-group').classList.remove('visible');
-			// }
-			// }
 	}
 
   render() {
