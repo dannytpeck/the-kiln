@@ -1,3 +1,4 @@
+/* globals $ */
 import React from 'react';
 
 class CieDetails extends React.Component {
@@ -5,24 +6,25 @@ class CieDetails extends React.Component {
     super(props);
   }
 
-  render() {
-	
-		// function for showing and hiding targeting
-		// TODO: Get it working
-		// change from onclick to something better
-		function toggleTargeting() {
-			function handleClick(e) {
-				e.preventDefault();
-				if (document.getElementById('targeting-group').className === 'hidden') {
-				document.getElementById('targeting-group').classList.add('visible');
-				document.getElementById('targeting-group').classList.remove('hidden');
-			} else {
-				document.getElementById('targeting-group').classList.add('hidden');
-				document.getElementById('targeting-group').classList.remove('visible');
-			}
-			}
-		}
+  // function for showing and hiding targeting
+	// TODO: Get it working
+	// change from onclick to something better
+  toggleTargeting() {
+		console.log('Toggle Targeting Clicked');
+		$('#targeting-group').toggle();
+			// function handleClick(e) {
+			// 	e.preventDefault();
+			// 	if (document.getElementById('targeting-group').className === 'hidden') {
+			// 	document.getElementById('targeting-group').classList.add('visible');
+			// 	document.getElementById('targeting-group').classList.remove('hidden');
+			// } else {
+			// 	document.getElementById('targeting-group').classList.add('hidden');
+			// 	document.getElementById('targeting-group').classList.remove('visible');
+			// }
+			// }
+	}
 
+  render() {
     return (
       <div id="cie-details-container">
 				<div id="cie-details-section">
@@ -36,8 +38,8 @@ class CieDetails extends React.Component {
 
 				<div id="targeting-section">
 					<h4 id="targeting-label">Targeting (if needed)</h4>
-					<button className="btn btn-default" id="show-targeting" onClick={toggleTargeting}>Show Targeting</button>
-					<div className="visible" id="targeting-group">
+					<button className="btn btn-default" id="show-targeting" onClick={this.toggleTargeting}>Toggle Targeting</button>
+					<div id="targeting-group">
 						<input id="subgroup-id" type="text" placeholder="SubgroupId"/>
 						<h6 id="targeting-or-label">or</h6>
 						<input id="field-1-name" type="text" placeholder="Field1Name"/>
