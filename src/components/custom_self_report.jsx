@@ -3,7 +3,7 @@ import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
 import SelfReportJsonDetails from './self_report_json_details';
 import SelfReportCodeBox from './self_report_code_box';
-import uploadToLibrary from '../helpers/upload_to_library';
+import uploadToAirtable from '../helpers/upload_to_airtable';
 
 class CustomSelfReport extends React.Component {
   constructor(props) {
@@ -18,7 +18,7 @@ class CustomSelfReport extends React.Component {
   }
 
   handleUploadClick() {
-		uploadToLibrary();
+		uploadToAirtable();
 	}
 
 	handleKeyUp(event) {
@@ -44,8 +44,8 @@ class CustomSelfReport extends React.Component {
 				<div className="left-column">
 					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
 					<div id="button-container">
-						<input id="titleInput" type="text" placeholder="Library Post Title"/>
-						<button className="btn btn-primary" id="library-upload" onClick={this.handleUploadClick}>Create Library Post</button>
+						<input id="titleInput" type="text" placeholder="Challenge Title"/>
+						<button className="btn btn-primary" id="airtable-upload" onClick={this.handleUploadClick}>Create Airtable Record</button>
 					</div>
 					<SelfReportJsonDetails />
 				</div>
