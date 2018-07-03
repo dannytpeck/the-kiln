@@ -14,8 +14,15 @@ class SelfReportCodeBox extends React.Component {
 		const today = new Date();
 		const date = (today.getMonth() + 1) + '/' + today.getDate() + '/' + today.getFullYear();
 
-		const shortDescriptionHtml = $('#shortDescription').html();
-		const htmlDescriptionHtml = $('#htmlDescription').html();
+		let shortDescriptionHtml = '';
+		if ($('#shortDescription').html()) {
+			shortDescriptionHtml = $('#shortDescription').html();
+		}
+		
+		let htmlDescriptionHtml = '';
+		if ($('#htmlDescription').html()) {
+			htmlDescriptionHtml = $('#htmlDescription').html();
+		}
 
 		const htmlText = 
 `<h2>Short Description</h2>
