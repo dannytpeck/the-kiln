@@ -13,7 +13,8 @@ class CustomSelfReport extends React.Component {
 			tagline: 'TAGLINE PHRASE',
 			moreInformation: 'Here you can write some additional details about how to complete the challenge. You could also add some tips for people at different skill levels for the activity.',
       resourceLink: '#',
-      resourceText: 'An interesting resource'
+      resourceText: 'An interesting resource',
+      resources: '<li><a href="#" target="_blank">An interesting resource</a>.</li><li><a href="#" target="_blank">An interesting resource</a>.</li>'
     };
   }
 
