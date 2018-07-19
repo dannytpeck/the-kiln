@@ -184,11 +184,7 @@ label > input {
   float: right;
 }
 
-.visible {
-	display: block;
-}
-
-.hidden {
+#targeting-group {
 	display: none;
 }
 

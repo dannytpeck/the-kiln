@@ -3,7 +3,7 @@ import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
 import SelfReportJsonDetails from './self_report_json_details';
 import SelfReportCodeBox from './self_report_code_box';
-import uploadToLibrary from '../helpers/upload_to_library';
+import uploadToAirtable from '../helpers/upload_to_airtable';
 
 class CustomSelfReport extends React.Component {
   constructor(props) {
@@ -13,27 +13,36 @@ class CustomSelfReport extends React.Component {
 			tagline: 'TAGLINE PHRASE',
 			moreInformation: 'Here you can write some additional details about how to complete the challenge. You could also add some tips for people at different skill levels for the activity.',
       resourceLink: '#',
-      resourceText: 'An interesting resource'
+      resourceText: 'An interesting resource',
+      resources: '<li><a href="#" target="_blank">An interesting resource</a>.</li><li><a href="#" target="_blank">An interesting resource</a>.</li>',
+
+      // initial state for xmp?
+      shortDescriptionHtml: '<p style="font-weight: bold; font-size: 14px">YOUR CHALLENGE: Complete this fun activity by the challenge end date.</p>',
+      htmlDescriptionHtml: '<h3 id="tagline" class="brandingBckgrndColor" style="padding: 10px; color: #fff; text-transform: uppercase;">TAGLINE PHRASE</h3><div id="moreInformation"></div><div id="resources"><h3 class="link-color" style="text-transform: uppercase;">additional resources</h3><ul style="padding-left: 20px;"><li><a href="target=&quot;_blank&quot;">fsfsases</a>.</li><li><a href="target=&quot;_blank&quot;">asefses</a>.</li></ul></div><span class="coachinginfo"><a href="/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DChange+Your+Habits%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite+Your+Life" target="_blank"><img id="coachingMessageImage" src="https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_General.png" alt="healthcoach" style="width: 100%;"></a></span><img id="bottomImage" src="https://mywellnessnumbers.com/ChallengeBank/inline-images/CB_Device%20Tracking_web.png" alt="Ignite Your Life" style="width: 100%;"><p style="font-size: 9px;"><span>&copy; Copyright 2018 </span><a href="http://www.adurolife.com" target="_blank" style="text-decoration: none;">ADURO, INC.</a><span> All rights reserved.</span></p>'
     };
   }
 
   handleUploadClick() {
-		uploadToLibrary();
+		uploadToAirtable();
 	}
 
 	handleKeyUp(event) {
 		switch (event.target.id) {
 			case 'shortDescriptionEdit':
 				this.setState({ shortDescription: event.target.value });
+				console.log('keyUp detected in shortDescriptionEdit');
 				break;
 			case 'taglineEdit':
 				this.setState({ tagline: event.target.value });
+				console.log('keyUp detected in taglineEdit');
 				break;
 			case 'moreInformationEdit':
 				this.setState({ moreInformation: event.target.innerHTML });
+				console.log('keyUp detected in moreInformationEdit');
 				break;
 			case 'resources-section':
 				this.setState({ resources: event.target.innerHTML });
+				console.log('keyUp detected in resources-section');
 				break;
 		}
 	}
@@ -44,8 +53,8 @@ class CustomSelfReport extends React.Component {
 				<div className="left-column">
 					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
 					<div id="button-container">
-						<input id="titleInput" type="text" placeholder="Library Post Title"/>
-						<button className="btn btn-primary" id="library-upload" onClick={this.handleUploadClick}>Create Library Post</button>
+						<input id="titleInput" type="text" placeholder="Challenge Title"/>
+						<button className="btn btn-primary" id="airtable-upload" onClick={this.handleUploadClick}>Create Airtable Record</button>
 					</div>
 					<SelfReportJsonDetails />
 				</div>
@@ -55,7 +64,9 @@ class CustomSelfReport extends React.Component {
 					tagline={this.state.tagline}
 					moreInformation={this.state.moreInformation}
           resources={this.state.resources} />
-          <SelfReportCodeBox />
+          <SelfReportCodeBox 
+          shortDescriptionHtml={this.state.shortDescriptionHtml}
+          htmlDescriptionHtml={this.state.htmlDescriptionHtml} />
 				</div>
 			</div>
 		);
