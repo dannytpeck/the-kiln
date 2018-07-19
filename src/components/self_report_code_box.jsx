@@ -8,6 +8,8 @@ import clean from '../helpers/clean';
 class SelfReportCodeBox extends React.Component {
   constructor(props) {
     super(props);
+    this.state = { shortDescriptionHtml: this.props.shortDescriptionHtml };
+    this.state = { htmlDescriptionHtml: this.props.htmlDescriptionHtml };
   }
 
   renderXmp() {
