@@ -1,3 +1,5 @@
+/* globals $*/
+
 import React from 'react';
 import clean from '../helpers/clean';
 
@@ -7,7 +9,10 @@ class CieCodeBox extends React.Component {
   }
 
   renderXmp() {
-		const htmlDescription = document.getElementById('htmlDescription');
+		let htmlDescription = '';
+		if ($('#htmlDescription').html()) {
+			htmlDescription = document.getElementById('htmlDescription');
+		}
 
 		const htmlText = `<div style="font-size: 14px;">${clean(htmlDescription.innerHTML)}</div>`;
 
