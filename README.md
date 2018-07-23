@@ -12,4 +12,3 @@ node
 ```
 
 ### Known Issues
-- Changes to Self-Report Resources and Coaching do not cause the <xmp> to be re-rendered. Only editing the Short Description, Tagline, and Long Description cause a re-render of the <xmp>
