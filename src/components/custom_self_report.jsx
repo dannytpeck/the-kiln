@@ -50,8 +50,10 @@ class CustomSelfReport extends React.Component {
       case 'removeResourcesButton':
       case 'removeCoachingButton':
       case 'changeCoachingMessage':
+      case 'deleteResource':
+      case 'addNewResource':
         // This fake, just to trigger an XMP update
-        this.setState({ resources: event.target.innerHTML });
+        this.setState({ resources: this.state.resources });
         break;
     }
   }

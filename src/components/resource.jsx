@@ -19,7 +19,7 @@ class Resource extends Component {
 				</div>
 				<div className="col-md-1">
 					<button className="delete-resource" onClick={() => this.props.onClick(this.props.number)}>
-						<img src="./images/icon-delete.png"/>
+						<img id="deleteResource" src="./images/icon-delete.png"/>
 					</button>
 				</div>
       </div>
