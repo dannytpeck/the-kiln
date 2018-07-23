@@ -27,22 +27,21 @@ class CustomSelfReport extends React.Component {
 	}
 
 	handleKeyUp(event) {
+    console.log(event.target);
+
 		switch (event.target.id) {
 			case 'shortDescriptionEdit':
 				this.setState({ shortDescription: event.target.value });
-				console.log('keyUp detected in shortDescriptionEdit');
 				break;
 			case 'taglineEdit':
 				this.setState({ tagline: event.target.value });
-				console.log('keyUp detected in taglineEdit');
 				break;
 			case 'moreInformationEdit':
 				this.setState({ moreInformation: event.target.innerHTML });
-				console.log('keyUp detected in moreInformationEdit');
 				break;
-			case 'resources-section':
+			case 'resourceUrl':
+      case 'resourceText':
 				this.setState({ resources: event.target.innerHTML });
-				console.log('keyUp detected in resources-section');
 				break;
 		}
 	}
@@ -64,7 +63,7 @@ class CustomSelfReport extends React.Component {
 					tagline={this.state.tagline}
 					moreInformation={this.state.moreInformation}
           resources={this.state.resources} />
-          <SelfReportCodeBox 
+          <SelfReportCodeBox
           shortDescriptionHtml={this.state.shortDescriptionHtml}
           htmlDescriptionHtml={this.state.htmlDescriptionHtml} />
 				</div>
