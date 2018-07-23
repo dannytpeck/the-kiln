@@ -39,6 +39,7 @@ class CustomSelfReport extends React.Component {
 				break;
 			case 'resourceUrl':
       case 'resourceText':
+        // This is fake, just to trigger an XMP update
 				this.setState({ resources: event.target.innerHTML });
 				break;
 		}
@@ -47,9 +48,9 @@ class CustomSelfReport extends React.Component {
   handleClick(event) {
     switch (event.target.id) {
       case 'removeResourcesButton':
-        this.setState({ resources: event.target.innerHTML });
-        break;
       case 'removeCoachingButton':
+      case 'changeCoachingMessage':
+        // This fake, just to trigger an XMP update
         this.setState({ resources: event.target.innerHTML });
         break;
     }
