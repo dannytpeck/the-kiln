@@ -14,8 +14,7 @@ class Coaching extends Component {
     return (
       <div className="coaching-container">
         <h4>Coaching</h4>
-        <button className="btn btn-default remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
-        {/* {this.renderResources()} */}
+        <button id="removeCoachingButton" className="btn btn-default remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
         <ChangeCoachingMessage />
       </div>
     );

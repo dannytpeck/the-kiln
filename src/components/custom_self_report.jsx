@@ -27,8 +27,6 @@ class CustomSelfReport extends React.Component {
 	}
 
 	handleKeyUp(event) {
-    console.log(event.target);
-
 		switch (event.target.id) {
 			case 'shortDescriptionEdit':
 				this.setState({ shortDescription: event.target.value });
@@ -46,11 +44,22 @@ class CustomSelfReport extends React.Component {
 		}
 	}
 
+  handleClick(event) {
+    switch (event.target.id) {
+      case 'removeResourcesButton':
+        this.setState({ resources: event.target.innerHTML });
+        break;
+      case 'removeCoachingButton':
+        this.setState({ resources: event.target.innerHTML });
+        break;
+    }
+  }
+
 	render() {
 		return (
 			<div id="custom-self-report">
 				<div className="left-column">
-					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} />
+					<SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} onClick={this.handleClick.bind(this)} />
 					<div id="button-container">
 						<input id="titleInput" type="text" placeholder="Challenge Title"/>
 						<button className="btn btn-primary" id="airtable-upload" onClick={this.handleUploadClick}>Create Airtable Record</button>

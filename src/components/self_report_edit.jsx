@@ -5,9 +5,9 @@ import TrumbowygBox from './trumbowyg_box';
 import Coaching from './coaching';
 import Resources from './resources';
 
-const SelfReportEdit = ({ onKeyUp }) => {
+const SelfReportEdit = ({ onKeyUp, onClick }) => {
   return (
-    <div id="edit" onKeyUp={onKeyUp}>
+    <div id="edit" onKeyUp={onKeyUp} onClick={onClick}>
       <CategorySelect />
       <EditBox name="shortDescription" title="Short Description" characters="300" />
       <EditBox name="tagline" title="Tagline" characters="25" />
