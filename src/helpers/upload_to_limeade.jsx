@@ -6,7 +6,7 @@ import createCSV from './create_csv';
 const uploadToLimeade = (type) => {
   const csv = createCSV(type);
   const headers = csv[0].join(',');
-  const url = 'http://mywellnessnumbers.sftp.adurolife.com/limeade-upload/';
+  const url = 'https://calendarbuilder.dev.adurolife.com/limeade-upload/';
 
   const oneIncentiveEvent = csv[1].join(',');
 
