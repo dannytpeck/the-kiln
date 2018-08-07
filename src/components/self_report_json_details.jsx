@@ -14,7 +14,7 @@ class SelfReportJsonDetails extends React.Component {
 
           <div className="form-group">
             <label htmlFor="jsonDimensions">Dimensions</label>
-            <input type="text" className="form-control" id="jsonDimensions" placeholder='"Resilience", "Self-Care"' />
+            <input type="text" className="form-control" id="jsonDimensions" placeholder='Resilience, Self-Care' />
           </div>
 
           <div className="form-group">
