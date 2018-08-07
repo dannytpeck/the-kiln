@@ -70,39 +70,6 @@ class SelfReportJsonDetails extends React.Component {
             <input type="text" className="form-control" id="jsonDeviceUnits" placeholder="steps" />
           </div>
 
-
-          {/* old fields */}
-          {/*
-          <div className="form-group">
-            <label htmlFor="jsonTracking">Tracking</label>
-            <select id="jsonTracking" className="form-control custom-select">
-              <option defaultValue>One Time</option>
-              <option>One Time Days</option>
-              <option>One Time Units</option>
-              <option>Weekly Days</option>
-              <option>Weekly Units</option>
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="jsonRequired">Required (Times to Track)</label>
-            <input type="text" className="form-control" id="jsonRequired" placeholder="0" />
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="jsonDevice">Device</label>
-            <select id="jsonDevice" className="form-control custom-select">
-              <option defaultValue>no</option>
-              <option>yes</option>
-            </select>
-          </div>
-
-          <div className="form-group">
-            <label htmlFor="jsonText">Tracking Text</label>
-            <input type="text" className="form-control" id="jsonText" placeholder="daily activity OR steps | exercise OR miles | exercise" />
-          </div>
-          */}
-
         </form>
       </div>
     );
