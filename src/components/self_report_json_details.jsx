@@ -49,7 +49,7 @@ class SelfReportJsonDetails extends React.Component {
 
           <div className="form-group">
             <label htmlFor="jsonActivityGoal">Activity Goal</label>
-            <input type="text" className="form-control" id="jsonActivityGoal" placeholder="e.g., 1" />
+            <input type="text" className="form-control" id="jsonActivityGoal" placeholder="e.g., 1, 3, 20" />
           </div>
 
           <div className="form-group">
