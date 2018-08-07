@@ -14,12 +14,12 @@ class SelfReportJsonDetails extends React.Component {
 
           <div className="form-group">
             <label htmlFor="jsonDimensions">Limeade Dimensions</label>
-            <input type="text" className="form-control" id="jsonDimensions" placeholder="Resilience, Self-Care" />
+            <input type="text" className="form-control" id="jsonDimensions" placeholder="e.g., Resilience, Self-Care" />
           </div>
 
           <div className="form-group">
             <label htmlFor="jsonImageUrl">Limeade Image URL</label>
-            <input type="text" className="form-control" id="jsonImageUrl" placeholder="/cfs-file.ashx/__key/CommunityServer-Components-PostAttachments/00-21-21-14-42/example.jpg" />
+            <input type="text" className="form-control" id="jsonImageUrl" placeholder="e.g., /cfs-file.ashx/__key/CommunityServer-Components-PostAttachments/00-21-21-14-42/example.jpg" />
           </div>
 
           <div className="form-group">
@@ -49,12 +49,12 @@ class SelfReportJsonDetails extends React.Component {
 
           <div className="form-group">
             <label htmlFor="jsonActivityGoal">Activity Goal</label>
-            <input type="text" className="form-control" id="jsonActivityGoal" placeholder="1" />
+            <input type="text" className="form-control" id="jsonActivityGoal" placeholder="e.g., 1" />
           </div>
 
           <div className="form-group">
             <label htmlFor="jsonActivityGoalText">Activity Goal Text</label>
-            <input type="text" className="form-control" id="jsonActivityGoalText" placeholder="throw tables" />
+            <input type="text" className="form-control" id="jsonActivityGoalText" placeholder="e.g., throw tables" />
           </div>
 
           <div className="form-group">
@@ -67,7 +67,7 @@ class SelfReportJsonDetails extends React.Component {
 
           <div className="form-group">
             <label htmlFor="jsonDeviceUnits">Device Units</label>
-            <input type="text" className="form-control" id="jsonDeviceUnits" placeholder="steps" />
+            <input type="text" className="form-control" id="jsonDeviceUnits" placeholder="e.g., steps, miles" />
           </div>
 
         </form>
