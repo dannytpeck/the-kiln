@@ -28,8 +28,6 @@ const uploadToAirtable = () => {
 	const image = `https://dl.airtable.com/${$('#jsonImageUrl').val()}`;
 	
 	base('Challenges').create({
-		// todo: get short description only as Instructions
-		// todo: get long description only as More Information Html
 		// todo get Image uploaded properly
 		'Title': title,
 		'Instructions': instructions,
