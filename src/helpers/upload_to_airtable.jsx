@@ -25,10 +25,9 @@ const uploadToAirtable = () => {
 	const activityGoalText = $('#jsonActivityGoalText').val();
 	const deviceEnabled = $('#jsonDeviceEnabled').val();
 	const deviceUnits = $('#jsonDeviceUnits').val();
-	const image = `https://dl.airtable.com/${$('#jsonImageUrl').val()}`;
+	const image = `https://d1dyf6uqjwvcrk.cloudfront.net${$('#jsonImageUrl').val()}`;
 	
 	base('Challenges').create({
-		// todo get Image uploaded properly
 		'Title': title,
 		'Instructions': instructions,
 		'More Information Html': moreInformationHtml,
