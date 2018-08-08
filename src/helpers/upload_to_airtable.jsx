@@ -10,27 +10,43 @@ const uploadToAirtable = () => {
 	$('#uploadModalBody').html('<p>Uploading...</p>');
 
 	const base = new Airtable({ apiKey: 'keyCxnlep0bgotSrX' }).base('appa7mnDuYdgwx2zP');
+
+	// variables for the input data
+	const title = $('#titleInput').val();
+	const instructions = $('#htmlContent').html();
+	const moreInformationHtml = $('#htmlContent').html();
+	const category = $('#challengeCategory').val();
+	const limeadeDimensions = $('#jsonDimensions').val();
+	const limeadeImageUrl = $('#jsonImageUrl').val();
+	const teamActivity = $('#jsonTeamActivity').val();
+	const rewardOccurrence = $('#jsonRewardOccurrence').val();
+	const activityTrackingType = $('#jsonActivityTrackingType').val();
+	const activityGoal = $('#jsonActivityGoal').val();
+	const activityGoalText = $('#jsonActivityGoalText').val();
+	const deviceEnabled = $('#jsonDeviceEnabled').val();
+	const deviceUnits = $('#jsonDeviceUnits').val();
+	const image = `https://dl.airtable.com/${$('#jsonImageUrl').val()}`;
 	
 	base('Challenges').create({
 		// todo: get short description only as Instructions
 		// todo: get long description only as More Information Html
 		// todo get Image uploaded properly
-		'Title': $('#titleInput').val(),
-		'Instructions': $('#htmlContent').html(),
-		'More Information Html': $('#htmlContent').html(),
-		'Category': $('#challengeCategory').val(),
-		'Limeade Dimensions': $('#jsonDimensions').val(),
-		'Limeade Image Url': $('#jsonImageUrl').val(),
-		'Team Activity': $('#jsonTeamActivity').val(),
-		'Reward Occurrence': $('#jsonRewardOccurrence').val(),
-		'Activity Tracking Type': $('#jsonActivityTrackingType').val(),
-		'Activity Goal': $('#jsonActivityGoal').val(),
-		'Activity Goal Text': $('#jsonActivityGoalText').val(),
-		'Device Enabled': $('#jsonDeviceEnabled').val(),
-		'Device Units': $('#jsonDeviceUnits').val(),
+		'Title': title,
+		'Instructions': instructions,
+		'More Information Html': moreInformationHtml,
+		'Category': category,
+		'Limeade Dimensions': limeadeDimensions,
+		'Limeade Image Url': limeadeImageUrl,
+		'Team Activity': teamActivity,
+		'Reward Occurrence': rewardOccurrence,
+		'Activity Tracking Type': activityTrackingType,
+		'Activity Goal': activityGoal,
+		'Activity Goal Text': activityGoalText,
+		'Device Enabled': deviceEnabled,
+		'Device Units': deviceUnits,
 		'Image': [
 			{
-				'url': "`https://d1dyf6uqjwvcrk.cloudfront.net$('#jsonImageUrl').val()`"
+				'url': image
 			}
     ]
 	}, function(err, record) {
