@@ -20,6 +20,20 @@ label > input {
 	width: 320px;
 }
 
+#instructionsHtml {
+	white-space: pre-wrap;
+	border: 2px solid grey;
+	padding:5px;
+	word-wrap:break-word;
+}
+
+#moreInformationHtml {
+	white-space: pre-wrap;
+	border: 2px solid grey;
+	padding:5px;
+	word-wrap:break-word;
+}
+
 #htmlContent {
 	white-space: pre-wrap;
 }

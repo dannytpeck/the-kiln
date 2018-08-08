@@ -26,6 +26,13 @@ class SelfReportCodeBox extends React.Component {
 			htmlDescriptionHtml = $('#htmlDescription').html();
 		}
 
+		// TODO: separate xmp for shortDescriptionHtml and htmlDescriptionHtml
+		const shortText =
+`<p style="font-weight: bold; font-size: 14px">${clean(shortDescriptionHtml)}</p>`;
+
+		const longText =
+`${clean(htmlDescriptionHtml)}`;
+
 		const htmlText = 
 `<h2>Short Description</h2>
 <div id="shD">
@@ -38,22 +45,33 @@ ${clean(htmlDescriptionHtml)}
 </div>`;
 
 		return (
-			<xmp id="htmlContent">
-				{htmlText.replace(/<!-- \/?react-text:? \d*\s*-->/g, '')}
-			</xmp>
+			<div id="code-box">
+				<h5>Short Description</h5>
+				<xmp id="instructionsHtml">
+					{shortText}
+				</xmp>
+
+				<h5>Long Description</h5>
+				<xmp id="moreInformationHtml">
+					{longText.replace(/<!-- \/?react-text:? \d*\s*-->/g, '')}
+				</xmp>
+
+				<xmp id="htmlContent">
+					{htmlText.replace(/<!-- \/?react-text:? \d*\s*-->/g, '')}
+				</xmp>
+			</div>
 		);
   }
 
 	render() {
+    const shortDescription = document.getElementById('shortDescription');
     const htmlDescription = document.getElementById('htmlDescription');
 
 
 		return (
 			<div id="html-description-section">
 				<h4 id="html-description-label">HTML Description:</h4>
-				<div id="code-box">
 					{htmlDescription ? this.renderXmp() : ''}
-				</div>
 			</div>
 		);
 	}

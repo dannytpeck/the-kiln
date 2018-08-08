@@ -13,8 +13,8 @@ const uploadToAirtable = () => {
 
 	// variables for the input data
 	const title = $('#titleInput').val();
-	const instructions = $('#htmlContent').html();
-	const moreInformationHtml = $('#htmlContent').html();
+	const instructions = $('#instructionsHtml').html();
+	const moreInformationHtml = $('#moreInformationHtml').html();
 	const category = $('#challengeCategory').val();
 	const limeadeDimensions = $('#jsonDimensions').val();
 	const limeadeImageUrl = $('#jsonImageUrl').val();
