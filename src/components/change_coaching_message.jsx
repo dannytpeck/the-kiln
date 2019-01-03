@@ -7,15 +7,15 @@ class ChangeCoachingMessage extends React.Component {
 		const imageUrl = 'https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_';
 		const coachingAnchor = document.querySelector('.coachinginfo > a');
 
-		let coachingLink = '/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DChange+Your+Habits%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite+Your+Life';
+		let coachingLink = '/api/redirect?url=https%3A//wellmetricssurveys.secure.force.com/Calendar/ProgramCalendarV2%3Fe=%5Be%5D%26formType=%26calendarName=Ignite+Your+Life%26participantCode=%5Bparticipantcode%5D';
 
 		switch (selected) {
 			case 'General':
-				img.src = imageUrl + 'General.png';
-				coachingLink = '/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DChange+Your+Habits%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite+Your+Life';
+				img.src = imageUrl + 'CoachingCall.png';
+				coachingLink = '/api/redirect?url=https%3A//wellmetricssurveys.secure.force.com/Calendar/ProgramCalendarV2%3Fe=%5Be%5D%26formType=%26calendarName=Ignite+Your+Life%26participantCode=%5Bparticipantcode%5D';
 				break;
 			case 'Get Moving':
-				img.src = imageUrl + 'General.png';
+				img.src = imageUrl + 'GetMoving.png';
 				coachingLink = '/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DGet%20Moving%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite%20Your%20Life';
 				break;
 			case 'Lighten Up':

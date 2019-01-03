@@ -11,7 +11,7 @@ class CategorySelect extends Component {
 		switch (challengeCategory) {
 
 			case 'Health and Fitness':
-				coachingMessageImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_General.png';
+				coachingMessageImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_GetMoving.png';
 				coachingMessageLink = '/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DGet%20Moving%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite%20Your%20Life';
 				bottomImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/inline-images/CB_Device%20Tracking_web.png';
 				break;
@@ -35,8 +35,8 @@ class CategorySelect extends Component {
 				break;
 
 			default:
-				coachingMessageImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_ChangeHabits.png';
-				coachingMessageLink = '/api/Redirect?url=https%3A%2F%2Fwellmetricssurveys.secure.force.com%2FEvent%2FCoachingEventCheckin%3Fp%3D%5Be%5D%26cpName%3DChange+Your+Habits%26participantCode%3D%5Bparticipantcode%5D%26eventType%3DIgnite+Your+Life';
+				coachingMessageImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_CoachingCall.png';
+				coachingMessageLink = '/api/redirect?url=https%3A//wellmetricssurveys.secure.force.com/Calendar/ProgramCalendarV2%3Fe=%5Be%5D%26formType=%26calendarName=Ignite+Your+Life%26participantCode=%5Bparticipantcode%5D';
 				bottomImageSrc = 'https://mywellnessnumbers.com/ChallengeBank/inline-images/CB_Device%20Tracking_web.png';
 				break;
 		}
