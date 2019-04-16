@@ -20,10 +20,6 @@ label > input {
 	width: 320px;
 }
 
-textarea {
-	width: 100%;
-}
-
 #instructionsHtml {
 	white-space: pre-wrap;
 	border: 2px solid grey;
@@ -63,7 +59,7 @@ textarea {
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
 	background-clip: padding-box;
 	color: #555;
-	font-family: "Helvetica Neue", Arial, sans-serif;
+	font-family: "Open Sans", Tahoma, Arial, sans-serif;
 	font-size: 1em;
 	line-height: 1.5;
 	overflow: hidden;
@@ -80,6 +76,7 @@ textarea {
 #preview .info-title {
 	font-size: 24px;
   line-height: 30px;
+	font-family: Montserrat, "Helvetica Neue", Helvetica,Arial, sans-serif;
 }
 
 #preview .get-started-button {
@@ -89,13 +86,14 @@ textarea {
   box-shadow: none;
   box-sizing: border-box;
   color: #fff;
-  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-family: Montserrat, "Helvetica Neue", Helvetica,Arial, sans-serif;
   font-size: 14px;
   font-weight: 400;
   line-height: 20px;
   padding: 13px;
   text-align: center;
   text-transform: uppercase;
+	max-width: 660px;
 }
 
 #preview .horizontal-line {
@@ -203,10 +201,6 @@ textarea {
 	background-color: #5179b6;
 }
 
-.trumbowyg-title {
-	margin-bottom: -16px;
-}
-
 #resources,
 #coaching {
 	margin-bottom: 1em;
@@ -278,4 +272,8 @@ textarea {
 
 #airtable-upload {
 	float: right;
+}
+
+.trumbowyg-box {
+	margin: 0 auto 2em;
 }

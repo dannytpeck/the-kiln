@@ -11,10 +11,10 @@ class EditBox extends React.Component {
 		this.setState({ characters: this.props.characters - characterLength });
 	}
 
+  /* global $ */
   handlePaste(event) {
-    // Not the greatest solution, but it'll serve as a quick fix here -DP
     const plainText = event.clipboardData.getData('text/plain');
-    $('#' + this.props.name).html(plainText); /* global $ */
+    $('#' + this.props.name).html(plainText);
   }
 
 	render() {

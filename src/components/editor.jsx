@@ -68,10 +68,12 @@ class Editor extends Component {
         </div>
 
         <SelfReportEdit onKeyUp={this.handleKeyUp.bind(this)} onClick={this.handleClick.bind(this)} />
+
         <div id="button-container">
           <input id="titleInput" type="text" placeholder="Challenge Title"/>
           <button className="btn btn-primary" id="airtable-upload" onClick={this.handleUploadClick}>Create Airtable Record</button>
         </div>
+
         <AirtableDetails />
 
         <SelfReportCodeBox

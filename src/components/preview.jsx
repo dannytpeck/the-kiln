@@ -10,9 +10,7 @@ const Preview = ({ shortDescription, tagline, moreInformation, resources }) => {
       <p>To complete this challenge, <strong>track your sleep patterns</strong> on at least <strong>5</strong> separate days each week.</p>
       <div className="horizontal-line"></div>
       <h5 className="my-2">About this activity</h5>
-      <p style={{ fontWeight: 'bold', fontSize: '14px' }}>
-        <span id="shortDescription">{shortDescription}</span>
-      </p>
+      <p><span id="shortDescription">{shortDescription}</span></p>
       <h5 className="my-2">More information</h5>
 
       <div id="htmlDescription">

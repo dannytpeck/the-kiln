@@ -5,18 +5,15 @@ import cleanPastedHTML from '../helpers/clean_pasted_html';
 class TrumbowygBox extends React.Component {
   constructor(props) {
     super(props);
-    this.state = { characters: this.props.characters };
   }
 
 	handleKeyUp(event) {
-		var characterLength = event.target.innerHTML.length;
-		this.setState({ characters: this.props.characters - characterLength });
 		$('#' + this.props.name).html($('#' + this.props.name + 'Edit').html());
 	}
 
 	componentDidMount() {
 		$('#' + this.props.name + 'Edit').trumbowyg(
-			{ btns: 
+			{ btns:
 				[
 				['viewHTML'],
         ['undo', 'redo'], // Only supported in Blink browsers
@@ -40,13 +37,10 @@ class TrumbowygBox extends React.Component {
 	}
 
 	render() {
-		var textColor = this.state.characters < 0 ? 'red' : 'inherit';
-
 		return (
 			<div className="trumbowyg-container">
-				<p className="trumbowyg-title">{this.props.title}</p>
+				<label htmlFor={this.props.name + 'Edit'}>{this.props.title}</label>
 				<div id={this.props.name + 'Edit'} onKeyUp={this.handleKeyUp.bind(this)}></div>
-				<p id={this.props.name + 'Limit'} style={{ color: textColor }}>{this.state.characters} characters remaining</p>
 			</div>
 		);
 	}
