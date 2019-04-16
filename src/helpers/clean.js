@@ -8,8 +8,8 @@ const clean = (dirtyText) => {
 		.replace(/\u201C/g, '"')
 		.replace(/\u201D/g, '"')
 		.replace(/\t/g, '')
-		.replace('rgb(255, 255, 255)', '#fff')
-		.replace('rgb(255, 255, 255)', '#fff')
+		.replace('rgb(255, 255, 255)', 'white')
+		.replace('rgb(255, 255, 255)', 'white')
 		.replace('rgb(228, 229, 231)', '#e4e5e7')
 		.replace('rgb(61, 98, 116)', '#3d6274');
 
