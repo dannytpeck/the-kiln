@@ -70,7 +70,6 @@ label > input {
 #preview h3 {
 	font-size: 17px;
 	line-height: 23px;
-	margin: 0;
 }
 
 #preview .info-title {
@@ -131,7 +130,6 @@ label > input {
 
 #html-description-section {
 	padding: 4px 0;
-	width: 500px;
 }
 
 #code-box {
@@ -201,6 +199,11 @@ label > input {
 	background-color: #5179b6;
 }
 
+.link-color {
+ color: #5179b6;
+ font-size: 1em;
+}
+
 #resources,
 #coaching {
 	margin-bottom: 1em;
@@ -227,13 +230,19 @@ label > input {
 	margin-top: 1em;
 }
 
-#change-coaching-message {
+#changeCoachingMessage {
 	clear: both;
-	margin-top: 2em;
 }
 
-#changeCoachingMessage {
-	float: right;
+#changeCoachingMessage label {
+	display: inline-block;
+  font-size: 1.25rem;
+  width: 60%;
+}
+
+#changeCoachingMessage select {
+	display: inline-block;
+  width: 40%;
 }
 
 .delete-resource:focus, .add-button:focus{
@@ -270,10 +279,14 @@ label > input {
 	background: none;
 }
 
-#airtable-upload {
-	float: right;
-}
-
 .trumbowyg-box {
 	margin: 0 auto 2em;
+}
+
+#airtableDetails h5 {
+	display: inline-block;
+}
+
+#airtableDetails #airtableUpload {
+	float: right;
 }

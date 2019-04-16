@@ -7,8 +7,10 @@ class AirtableDetails extends Component {
 
   render() {
     return (
-      <div id="jsonDetails">
-        <h5>Airtable Record Details</h5>
+      <div id="airtableDetails">
+        <h5 className="my-2">Airtable Record Details</h5>
+
+        <button className="btn btn-primary" id="airtableUpload" onClick={this.handleUploadClick}>Create Airtable Record</button>
 
         <form id="jsonEdit">
 
