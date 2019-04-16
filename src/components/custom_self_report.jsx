@@ -1,7 +1,7 @@
 import React from 'react';
 import SelfReportEdit from './self_report_edit';
 import SelfReportPreview from './self_report_preview';
-import SelfReportJsonDetails from './self_report_json_details';
+import AirtableDetails from './airtable_details';
 import SelfReportCodeBox from './self_report_code_box';
 import uploadToAirtable from '../helpers/upload_to_airtable';
 
@@ -67,7 +67,7 @@ class CustomSelfReport extends React.Component {
 						<input id="titleInput" type="text" placeholder="Challenge Title"/>
 						<button className="btn btn-primary" id="airtable-upload" onClick={this.handleUploadClick}>Create Airtable Record</button>
 					</div>
-					<SelfReportJsonDetails />
+					<AirtableDetails />
 				</div>
 				<div className="right-column">
 					<SelfReportPreview

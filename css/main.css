@@ -167,30 +167,6 @@ label > input {
 	width: 220px;
 }
 
-.coaching-container {
-  width: 420px;
-	margin-bottom: 30px;
-}
-
-.coaching-container h4 {
-  display: inline-block;
-	width: 50%;
-	margin-bottom: 20px;
-}
-
-.coaching-container .remove-button {
-  margin-left: 38px;
-}
-
-#change-coaching-message {
-	clear: both;
-	margin-top: 20px;
-}
-
-#changeCoachingMessage {
-	margin-left: 20px;
-}
-
 #show-targeting {
 	margin: 30px 0 5px 0;
   position: relative;
@@ -230,25 +206,42 @@ label > input {
 	display: inline-block;
 }
 
-.resources-container {
+#resources,
+#coaching {
   width: 420px;
-	margin-bottom: 25px;
+	margin-bottom: 2em;
 }
 
-.resources-container h4 {
-  display: inline-block;
-	width: 50%;
-	margin-bottom: 20px;
+#resources h5,
+#coaching h5 {
+	display: inline-block;
+	margin: 0.3em 0;
 }
 
-.resources-container .remove-button {
-  margin-left: 38px;
+#resources .remove-button,
+#coaching .remove-button {
+  float: right;
 }
 
-.resources-container .add-button {
+#resources .add-button {
 	background: none;
 	border: none;
 }
+
+#resourcesContainer {
+	clear: both;
+	margin-top: 1em;
+}
+
+#change-coaching-message {
+	clear: both;
+	margin-top: 2em;
+}
+
+#changeCoachingMessage {
+	float: right;
+}
+
 .delete-resource:focus, .add-button:focus{
 	outline: none;
 }

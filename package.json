@@ -11,7 +11,7 @@
   "author": "Danny Peck, Josh Braun",
   "license": "MIT",
   "devDependencies": {
-    "babel-core": "^6.2.1",
+    "babel-core": "^6.26.3",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",

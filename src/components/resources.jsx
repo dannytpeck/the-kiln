@@ -75,10 +75,12 @@ class Resources extends Component {
 
   render() {
     return (
-      <div className="resources-container">
-        <h4>Additional Resources</h4>
-        <button id="removeResourcesButton" className="btn btn-default remove-button" onClick={this.removeAllResourcesClick}>Remove Resources</button>
-        {this.renderResources()}
+      <div id="resources">
+        <h5>Additional Resources</h5>
+        <button id="removeResourcesButton" className="btn btn-danger remove-button" onClick={this.removeAllResourcesClick}>Remove Resources</button>
+				<div id="resourcesContainer">
+					{this.renderResources()}
+				</div>
         <button className="add-button" onClick={this.addResourceClick.bind(this)}>
 					<img id="addNewResource" src="./images/icon-add.png"/>
 					<span className="add-more-resources">Add more resources</span>

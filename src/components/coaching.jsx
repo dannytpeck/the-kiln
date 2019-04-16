@@ -12,9 +12,9 @@ class Coaching extends Component {
 
   render() {
     return (
-      <div className="coaching-container">
-        <h4>Coaching</h4>
-        <button id="removeCoachingButton" className="btn btn-default remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
+      <div id="coaching">
+        <h5>Coaching</h5>
+        <button id="removeCoachingButton" className="btn btn-danger remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
         <ChangeCoachingMessage />
       </div>
     );
