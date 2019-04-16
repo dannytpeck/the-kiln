@@ -59,7 +59,6 @@ class ChangeCoachingMessage extends React.Component {
 					<option>Live Empowered</option>
 					<option>Mission Nutrition</option>
 					<option>Mood & Food</option>
-					{/* <option>Breathe Easy</option> */}
 				</select>
 			</p>
 		);

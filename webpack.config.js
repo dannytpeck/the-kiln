@@ -1,34 +1,31 @@
+const webpack = require('webpack');
+const path = require('path');
+
 module.exports = {
-  entry: [
-    './src/index.jsx'
-  ],
-  output: {
-    path: 'js/',
-    publicPath: 'js/',
-    filename: 'bundle.js'
-  },
+  entry: __dirname + '/src/index.jsx',
   module: {
-    loaders: [
-    {
-      exclude: /node_modules/,
-      test: /\.jsx?$/,
-      loader: 'babel',
-      query: {
-        presets: ['react', 'es2015', 'stage-1']
+    rules: [
+      {
+        test: /\.(js|jsx)$/,
+        exclude: /node_modules/,
+        use: ['babel-loader']
       }
-    },
-    {
-      test: /\.json$/,
-      loader: 'json-loader'
-    },
     ]
   },
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json']
+    extensions: ['*', '.js', '.jsx']
   },
+  output: {
+    path: __dirname + '/js',
+    publicPath: '/js',
+    filename: 'bundle.js'
+  },
+  plugins: [
+    new webpack.HotModuleReplacementPlugin()
+  ],
   devServer: {
-    historyApiFallback: true,
     contentBase: './',
-    open: true
+    hot: true,
+    open: 'chrome'
   }
 };

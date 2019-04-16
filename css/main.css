@@ -58,7 +58,6 @@ textarea {
 
 #preview {
 	border: 1px solid #888;
-	width: 660px;
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -134,7 +133,7 @@ textarea {
 
 #html-description-section {
 	padding: 4px 0;
-	width: 660px;
+	width: 500px;
 }
 
 #code-box {
@@ -267,7 +266,7 @@ textarea {
 }
 
 .col-md-5 > input {
-	width: 210px;
+	width: 100%;
 }
 
 .delete-resource {

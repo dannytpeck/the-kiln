@@ -30,7 +30,6 @@ const Preview = ({ shortDescription, tagline, moreInformation, resources }) => {
             <img id="coachingMessageImage" src="https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_CoachingCall.png" style={{ width: '100%' }} alt="healthcoach"/>
           </a>
         </span>
-        <img id="bottomImage" src="https://mywellnessnumbers.com/ChallengeBank/inline-images/CB_Device%20Tracking_web.png" style={{ width: '100%' }} alt="Ignite Your Life"/>
         <p style={{ fontSize: '9px' }}>
           <span>&#169; Copyright {currentYear} </span>
           <a style={{ textDecoration: 'none' }} href="http://www.adurolife.com" target="_blank">ADURO, INC.</a>

@@ -77,7 +77,7 @@ class Resources extends Component {
     return (
       <div id="resources">
         <h5>Additional Resources</h5>
-        <button id="removeResourcesButton" className="btn btn-danger remove-button" onClick={this.removeAllResourcesClick}>Remove Resources</button>
+        <button id="removeResourcesButton" className="btn btn-outline-danger remove-button" onClick={this.removeAllResourcesClick}>Remove Resources</button>
 				<div id="resourcesContainer">
 					{this.renderResources()}
 				</div>

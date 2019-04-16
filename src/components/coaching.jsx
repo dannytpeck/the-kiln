@@ -14,7 +14,7 @@ class Coaching extends Component {
     return (
       <div id="coaching">
         <h5>Coaching</h5>
-        <button id="removeCoachingButton" className="btn btn-danger remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
+        <button id="removeCoachingButton" className="btn btn-outline-danger remove-button" onClick={this.removeCoachingClick}>Remove Coaching</button>
         <ChangeCoachingMessage />
       </div>
     );
