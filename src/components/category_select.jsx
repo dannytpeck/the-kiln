@@ -54,13 +54,15 @@ class CategorySelect extends Component {
 
 	render() {
 		return (
-			<select id="challengeCategory" onChange={this.handleChange.bind(this)}>
-				<option>--Select Challenge Category--</option>
-				<option>Health and Fitness</option>
-				<option>Growth and Development</option>
-				<option>Money and Prosperity</option>
-				<option>Contribution and Sustainability</option>
-			</select>
+			<div className="form-group">
+				<select className="form-control" id="challengeCategory" onChange={this.handleChange.bind(this)}>
+					<option>--Select Challenge Category--</option>
+					<option>Health and Fitness</option>
+					<option>Growth and Development</option>
+					<option>Money and Prosperity</option>
+					<option>Contribution and Sustainability</option>
+				</select>
+			</div>
 		);
 	}
 }

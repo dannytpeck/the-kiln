@@ -20,6 +20,10 @@ label > input {
 	width: 320px;
 }
 
+textarea {
+	width: 100%;
+}
+
 #instructionsHtml {
 	white-space: pre-wrap;
 	border: 2px solid grey;
@@ -52,19 +56,9 @@ label > input {
 	float: left;
 }
 
-#edit {
-	margin-top: 1em;
-	/*overflow: hidden;*/
-	display: inline-block;
-	width: 50%;
-	margin-right: 0px;
-	padding-right: 0px;
-}
-
 #preview {
-	background-color: #F1F2F3;
 	border: 1px solid #888;
-	width: 440px;
+	width: 660px;
 	border-top-color: #999;
 	border-radius: 5px;
 	box-shadow: 0 5px 20px rgba(0,0,0,.2);
@@ -74,15 +68,47 @@ label > input {
 	font-size: 1em;
 	line-height: 1.5;
 	overflow: hidden;
-	padding-left: 20px;
-	padding-right: 20px;
-	padding-bottom: 15px;
+	padding: 50px;
 	margin-bottom: 1.5em;
 }
 
+#preview h3 {
+	font-size: 17px;
+	line-height: 23px;
+	margin: 0;
+}
+
+#preview .info-title {
+	font-size: 24px;
+  line-height: 30px;
+}
+
+#preview .get-started-button {
+	width: 100%;
+	border: none;
+  border-radius: 2px;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #fff;
+  font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 13px;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+#preview .horizontal-line {
+	box-sizing: border-box;
+	height: 1px;
+	width: 100%;
+	border: 1px solid #E4E5E7;
+  margin: 15px 0;
+}
+
 #button-container {
-	display: inline-block;
-	margin: 1em 0;
+	margin: 2em 0;
 }
 
 #titleInput {
@@ -102,22 +128,13 @@ label > input {
 	float: right;
 }
 
-#cie-details-container {
-	display: inline-block;
-	width: 440px;
-}
-
-#cie-details-section {
-	padding: 4px 0;
-}
-
 #targeting-section {
 	padding: 4px 0 12px 0;
 }
 
 #html-description-section {
 	padding: 4px 0;
-	width: 440px;
+	width: 660px;
 }
 
 #code-box {
@@ -183,16 +200,6 @@ label > input {
   width: 100%;
 }
 
-#challengeCategory {
-	margin-bottom: 10px;
-}
-
-#jsonDetails {
-	padding: 50px 10px 10px 10px;
-	overflow: hidden;
-	width: 440px;
-}
-
 .brandingBckgrndColor {
 	background-color: #5179b6;
 }
@@ -201,15 +208,9 @@ label > input {
 	margin-bottom: -16px;
 }
 
-.trumbowyg-container {
-	width: 420px;
-	display: inline-block;
-}
-
 #resources,
 #coaching {
-  width: 420px;
-	margin-bottom: 2em;
+	margin-bottom: 1em;
 }
 
 #resources h5,
@@ -266,7 +267,7 @@ label > input {
 }
 
 .col-md-5 > input {
-	width: 190px;
+	width: 210px;
 }
 
 .delete-resource {
@@ -274,4 +275,8 @@ label > input {
 	top: 20px;
 	border: none;
 	background: none;
+}
+
+#airtable-upload {
+	float: right;
 }
