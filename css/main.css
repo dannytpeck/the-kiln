@@ -67,6 +67,10 @@ label > input {
 	margin-bottom: 1.5em;
 }
 
+#preview p {
+	margin: 5px 0;
+}
+
 #preview h3 {
 	font-size: 17px;
 	line-height: 23px;
@@ -289,4 +293,8 @@ label > input {
 
 #airtableDetails #airtableUpload {
 	float: right;
+}
+
+.alert-success {
+	overflow: hidden;
 }

@@ -25,7 +25,7 @@ const Preview = ({ shortDescription, tagline, moreInformation, resources }) => {
         </div>
         <span className="coachinginfo">
           <a href="/api/redirect?url=https%3A//wellmetricssurveys.secure.force.com/Calendar/ProgramCalendarV2%3Fe=%5Be%5D%26formType=%26calendarName=Ignite+Your+Life%26participantCode=%5Bparticipantcode%5D" target="_blank">
-            <img id="coachingMessageImage" src="https://mywellnessnumbers.com/ChallengeBank/coaching-messages/2017/ADURO_Challenge_CoachingMessages_CoachingCall.png" style={{ width: '100%' }} alt="healthcoach"/>
+            <img id="coachingMessageImage" src="https://cdn.adurolife.com/assets/hp/images/Coaching_CTA_HF.png" style={{ width: '100%' }} alt="healthcoach"/>
           </a>
         </span>
         <p style={{ fontSize: '9px' }}>

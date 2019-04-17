@@ -6,10 +6,9 @@ class Resources extends Component {
 	constructor(props) {
 		super(props);
 		this.state = {
-			count: 2,
+			count: 1,
 			resources: [
-				{ id: 0, url: '', linkText: '' },
-				{ id: 1, url: '', linkText: '' }
+				{ id: 0, url: '', linkText: '' }
 			]
 		};
 	}
@@ -77,7 +76,7 @@ class Resources extends Component {
     return (
       <div className="resources">
         <h5>Additional Resources</h5>
-        <button id="removeResourcesButton" className="btn btn-outline-danger remove-button" onClick={this.removeAllResourcesClick}>Remove Resources</button>
+        <button id="removeResourcesButton" className="btn btn-outline-danger remove-button" onClick={() => this.removeAllResourcesClick()}>Remove Resources</button>
 				<div id="resourcesContainer">
 					{this.renderResources()}
 				</div>
