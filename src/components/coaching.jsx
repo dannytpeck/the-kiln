@@ -5,7 +5,7 @@ import ChangeCoachingMessage from './change_coaching_message';
 class Coaching extends Component {
 
   removeCoachingClick() {
-    $('.coaching-container').remove();
+    $('#coaching').remove();
 		$('.coachinginfo').remove();
   }
 

@@ -204,23 +204,23 @@ label > input {
  font-size: 1em;
 }
 
-#resources,
+.resources,
 #coaching {
 	margin-bottom: 1em;
 }
 
-#resources h5,
+.resources h5,
 #coaching h5 {
 	display: inline-block;
 	margin: 0.3em 0;
 }
 
-#resources .remove-button,
+.resources .remove-button,
 #coaching .remove-button {
   float: right;
 }
 
-#resources .add-button {
+.resources .add-button {
 	background: none;
 	border: none;
 }

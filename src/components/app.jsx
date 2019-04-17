@@ -26,7 +26,6 @@ class Kiln extends React.Component {
   }
 
   handleKeyUp(event) {
-    console.log(event.target);
 		switch (event.target.id) {
       case 'challengeName':
         this.setState({ challengeName: event.target.value });
