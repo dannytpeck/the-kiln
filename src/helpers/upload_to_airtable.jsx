@@ -12,7 +12,7 @@ const uploadToAirtable = () => {
 	const base = new Airtable({ apiKey: 'keyCxnlep0bgotSrX' }).base('appa7mnDuYdgwx2zP');
 
 	// variables for the input data
-	const title = $('#titleInput').val();
+	const title = $('#challengeName').val();
 	const instructions = $('#instructionsHtml').html();
 	const moreInformationHtml = $('#moreInformationHtml').html();
 	const category = $('#challengeCategory').val();
@@ -26,7 +26,7 @@ const uploadToAirtable = () => {
 	const deviceEnabled = $('#jsonDeviceEnabled').val();
 	const deviceUnits = $('#jsonDeviceUnits').val();
 	const image = `https://d1dyf6uqjwvcrk.cloudfront.net${$('#jsonImageUrl').val()}`;
-	
+
 	base('Challenges').create({
 		'Title': title,
 		'Instructions': instructions,
