@@ -219,6 +219,7 @@ label > input {
 	margin: 0.3em 0;
 }
 
+#taglineSection .remove-button,
 .resources .remove-button,
 #coaching .remove-button {
   float: right;
