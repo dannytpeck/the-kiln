@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Preview = ({ shortDescription, tagline, moreInformation, resources }) => {
+const Preview = ({ shortDescription, moreInformation, resources }) => {
   const today = new Date;
 	const currentYear = today.getFullYear();
 
@@ -14,7 +14,6 @@ const Preview = ({ shortDescription, tagline, moreInformation, resources }) => {
       <h5 className="my-2">More information</h5>
 
       <div id="htmlDescription">
-        <h3 id="tagline" className="brandingBckgrndColor" style={{ padding: '10px', color: '#fff', textTransform: 'uppercase' }}>{tagline}</h3>
         <div id="moreInformation"><p dangerouslySetInnerHTML={{ __html: moreInformation }}></p></div>
         <div id="resources">
           <h3 className="link-color" style={{ textTransform: 'uppercase' }}>additional resources</h3>

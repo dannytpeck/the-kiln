@@ -173,14 +173,9 @@ label > input {
 #titleLimit,
 #shortDescriptionLimit,
 #descriptionLimit,
-#taglineLimit,
 #moreInformationLimit {
 	margin-top: -7px;
 	font-size: 12px;
-}
-
-#editTagline {
-	width: 220px;
 }
 
 #show-targeting {
@@ -219,7 +214,6 @@ label > input {
 	margin: 0.3em 0;
 }
 
-#taglineSection .remove-button,
 .resources .remove-button,
 #coaching .remove-button {
   float: right;
