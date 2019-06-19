@@ -23,6 +23,11 @@ class Editor extends Component {
     $('#shortDescription').html(event.target.value);
   }
 
+  removeTaglineClick(event) {
+    $('#tagline').remove();
+    $('#taglineSection').remove();
+  }
+
 	render() {
     const { onKeyUp, onClick } = this.props;
 
@@ -41,9 +46,10 @@ class Editor extends Component {
           <input type="text" className="form-control" id="shortDescriptionBox" onChange={(e) => this.changeShortDescription(e)} />
         </div>
 
-        <div className="form-group">
+        <div id="taglineSection" className="form-group">
           <label htmlFor="taglineBox">Tagline</label>
           <input type="text" className="form-control" id="taglineBox" onChange={(e) => this.changeTagline(e)} />
+          <button id="removeTaglineButton" className="btn btn-outline-danger remove-button" onClick={this.removeTaglineClick}>Remove Tagline</button>
         </div>
 
         <TrumbowygBox name="moreInformation" title="More Information (HTML)" />
