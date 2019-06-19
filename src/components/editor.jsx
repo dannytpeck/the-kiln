@@ -15,17 +15,8 @@ class Editor extends Component {
     $('.info-title').html(event.target.value);
   }
 
-  changeTagline(event) {
-    $('#tagline').html(event.target.value);
-  }
-
   changeShortDescription(event) {
     $('#shortDescription').html(event.target.value);
-  }
-
-  removeTaglineClick(event) {
-    $('#tagline').remove();
-    $('#taglineSection').remove();
   }
 
 	render() {
@@ -44,12 +35,6 @@ class Editor extends Component {
         <div className="form-group">
           <label htmlFor="shortDescriptionBox">Short Description</label>
           <input type="text" className="form-control" id="shortDescriptionBox" onChange={(e) => this.changeShortDescription(e)} />
-        </div>
-
-        <div id="taglineSection" className="form-group">
-          <label htmlFor="taglineBox">Tagline</label>
-          <input type="text" className="form-control" id="taglineBox" onChange={(e) => this.changeTagline(e)} />
-          <button id="removeTaglineButton" className="btn btn-outline-danger remove-button" onClick={this.removeTaglineClick}>Remove Tagline</button>
         </div>
 
         <TrumbowygBox name="moreInformation" title="More Information (HTML)" />
