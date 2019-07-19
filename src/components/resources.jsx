@@ -42,7 +42,7 @@ class Resources extends Component {
 	generateHTML() {
 		let html = '';
 		this.state.resources.map(resource => {
-			html += `<li><a href=${resource.url} target="_blank">${resource.linkText}</a>.</li>`;
+			html += `<li><a href=${resource.url} target="_blank">${resource.linkText}</a></li>`;
 		});
 		$('#resources ul').html(html);
 	}
