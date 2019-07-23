@@ -27,10 +27,8 @@ const Preview = ({ shortDescription, moreInformation, resources }) => {
             <img id="coachingMessageImage" src="https://cdn.adurolife.com/assets/hp/images/Coaching_CTA_HF.png" style={{ width: '100%' }} alt="healthcoach"/>
           </a>
         </span>
-        <p style={{ fontSize: '9px' }}>
-          <span>&#169; Copyright {currentYear} </span>
-          <a style={{ textDecoration: 'none' }} href="http://www.adurolife.com" target="_blank">ADURO, INC.</a>
-          <span> All rights reserved.</span>
+        <p style={{ fontSize: '0.7em' }}>
+          &copy; Copyright 2019 <a style={{ textDecoration: 'none' }} href="http://www.adurolife.com" target="_blank" rel="noopener">ADURO, INC.</a> All rights reserved.
         </p>
       </div>
 
